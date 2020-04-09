@@ -3,6 +3,7 @@
 
 from typing import Tuple
 from copy import deepcopy
+from collections import deque
 import random
 
 import gym
@@ -33,13 +34,16 @@ from keras.optimizers import Adam
 
 #env 
 
-LEARNING_RATE = 0.005
+#set keras to use gpu
+LEARNING_RATE = 0.001
 
 class Memory:
-    def __init__(self):
-        self.events = []
+    def __init__(self, maxlen=20000):
+        self.events = deque(maxlen=maxlen)
+
     def remember(self, event):
         self.events.append(event)
+
     def sample(self, size=50): #return 50 samples
         if len(self.events) >= size:
             return random.sample(self.events, (size))
@@ -47,26 +51,23 @@ class Memory:
             return []
 
 class Epsilon:
-    def __init__(self, start=1.0, min=0.1, decay=0.1):
+    def __init__(self, start=1.0, min=0.01, decay=0.05):
         self.value = start
         self.min = min
-        self.decay = decay
-    def __lt__(self, other: float) -> bool:
-        return self.value < other
+        self.decay_by = decay
     def decay(self):
-        self.value = min(self.value-self.decay, self.min)
+        self.value = min(self.value-self.decay_by, self.min)
 
 class Predictor:
     # Note on data shape: keras expects data in the shape (N, m)
     # with N the number of training examplesa and the number of 
     # possible clauses
     def __init__(self, in_dim: int, out_dim: int):
-        print(f"in_dim: {in_dim}, out_dim: {out_dim}")
         self.model = keras.Sequential([
             Dense(24, activation='relu', input_shape=(in_dim,)),
             Dense(48, activation='relu'),
-            Dense(24, activation='relu'),
-            Dense(out_dim)
+            #Dense(24, activation='relu'),
+            Dense(out_dim, activation="linear")
         ])
         self.model.compile(
             loss="mean_squared_error",
@@ -77,7 +78,7 @@ class Predictor:
 
     def clone(self):
         clone = Predictor(self.in_dim, self.out_dim)
-        clone.set_weights(self.model.get_weights())
+        clone.model.set_weights(self.model.get_weights())
         return clone
 
     #predict effect of each action
@@ -86,10 +87,16 @@ class Predictor:
         res = self.model.predict(state)[0] #unpack list of lists as we have only one case
         return res
 
+    def predict_batch(self, states):
+        return self.model.predict(states)
+
     def fit(self, state, predicted_actions):
         state = state.reshape((1,self.in_dim)) #1 state with 2 inputs
         predicted_actions = predicted_actions.reshape((1,self.out_dim)) #1 prediction with 3 actions
         self.model.fit(state, predicted_actions, verbose=0)
+
+    def copy_weights_from(self, other):
+        self.model.set_weights(other.model.get_weights())
 
 #TODO implement DQN with infrequent weight updates (see page 192 and second blog post above)
 
@@ -109,37 +116,47 @@ class Predictor:
 # - remember the old state, new state, current reward and the action that brought us there
 # - train the neural net on everything in the network, effectively updating the "Q table" that is the neural net.
 
-def replay_and_train(memory, model, sample_size):
-    gamma = 0.85 #look into gamma
 
-    data_before = np.empty((sample_size, model.in_dim))
-    data_predicted_effects = np.empty((sample_size, model.out_dim))
-    # TODO rewrite to do fit all in one pass using data shape 
-    # instead of multiple passes in the for loop
-    # TODO rewrite further to also bundle the predicts 
-    for i, (before, action, after, score, game_ended) in enumerate(memory.sample(size=sample_size)):
-        predicted_effects = model.predict(before) #returns the tree actions
-        if game_ended: #set the correct value for the taken action
-            #print("actually won once")
-            predicted_effects[action] = score
+def samples_to_states(samples):
+    state_dim = len(samples[0][0])
+    before_states = np.empty((len(samples), state_dim ))
+    after_states = np.empty((len(samples), state_dim ))
+    for i, (before, _, after, _, _) in enumerate(samples):
+        before_states[i] = before
+        after_states[i] = after
+    return before_states, after_states
+
+def replay_and_train(memory: Memory, model: Predictor, model_train: Predictor, sample_size: int):
+    gamma = 0.99 #look into gamma
+
+    samples = memory.sample(sample_size)
+    before_states, after_states = samples_to_states(samples)
+    predict_effects = model.predict_batch(before_states) #for entire sample
+    predict_future_effects = model.predict_batch(after_states) #for entire sample
+
+    for i, (_, action, _, score, succes) in enumerate(samples):
+        if succes:
+            predict_effects[i][action] = score
         else:
-            predicted_future_effects = model.predict(after)
-            predicted_effects[action] = score+ gamma*max(predicted_future_effects)
-        #print(f"before: {before}, predicted_effects: {predicted_effects}")
-        data_before[i] = before
-        data_predicted_effects[i] = predicted_effects
-    model.model.fit(data_before, data_predicted_effects, verbose=0)
+            predict_effects[i][action] = score + gamma*max(predict_future_effects[i])
+
+    model_train.model.fit(before_states, predict_effects, verbose=0)
 
 def best_action(state: np.ndarray, model: Predictor, env, epsilon: Epsilon) -> int:
-    if np.random.random() < epsilon:
-        return env.action_space.sample()
+    epsilon.decay()
+    if np.random.rand(1) <= epsilon.value:
+        #print("random")
+        #action = np.random.randint(0, 3)
+        action = env.action_space.sample()
+        #print(action)
+        return action
     else:
         return np.argmax(model.predict(state))
 
 
 def main():
     MAX_STEPS = 200
-    SAMPLE_SIZE = 30
+    SAMPLE_SIZE = 32
     
     env = gym.make("MountainCar-v0")
     env._max_episode_steps = MAX_STEPS+1
@@ -154,33 +171,30 @@ def main():
     for training_session in range(1000):
         before = env.reset()
 
-        if training_session % 50 ==0:
-            env.render()
-
         for step in range(MAX_STEPS):
-            #if training_session % 10 == 0:
-            #    env.render()
+            if training_session % 100 == 0:
+                env.render()
             action = best_action(before, model, env, epsilon)
             after, score, success, debug = env.step(action) # returns [state: numpy.ndarray, reward: float, done: bool, debug: dict]
 
             if success:
-                epsilon.decay()
+                #epsilon.decay()
                 score = 10
 
-            memory.remember((before, action, after, score, game_over))
+            memory.remember((before, action, after, score, success))
             if step > SAMPLE_SIZE: #ensure some exploration has been done
                 replay_and_train(memory, model, model_train, SAMPLE_SIZE)
             before = after
     
             if success:
                 env.render()
-                print(after, score, game_over, debug)
+                print(after, score, success, debug)
                 #input("Press Enter to continue...")
                 break
             
 
-        print(f"training session {training_session} done in {step+1} steps")
-        model.set_weights(model_train.get_weights())
+        print("training session {} done in {} steps".format(training_session, step+1))
+        model.copy_weights_from(model_train)
 
 if __name__ == "__main__":
     main()
