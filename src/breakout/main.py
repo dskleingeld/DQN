@@ -184,7 +184,7 @@ def main():
                 if session_max_score > highscore:
                     path = "data/{}_weights.h5".format(spec_name)
                     model_train.save(path) 
-                print("score: {:5}, epsilon: {:5.3f}, session took: {:5} steps".format(session_max_score, epsilon, step-prev_steps))
+                print("score: {:<3}, epsilon: {:<5.3f}, session took: {:<5} steps, done: {:.3f}%".format(session_max_score, epsilon, step-prev_steps, 100*step/MAX_STEPS))
                 prev_steps = step
         
 
