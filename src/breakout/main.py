@@ -164,6 +164,7 @@ def main():
 
             if info["ale.lives"] < lives: #credits: https://github.com/fg91/Deep-Q-Learning/blob/master/DQN.ipynb
                 #act as if game over during replay if we lose a life
+                lives = info["ale.lives"]
                 memory.remember((before, action, after, cum_score, True))
             else:
                 memory.remember((before, action, after, cum_score, game_over))
@@ -178,7 +179,6 @@ def main():
             if game_over:
                 before = env.reset()
                 before = reduce_state(before)
-                session_max_score = 0
                 lives = 5
                 
                 if session_max_score > highscore:
@@ -186,6 +186,7 @@ def main():
                     model_train.save(path) 
                 print("score: {:<3}, epsilon: {:<5.3f}, session took: {:<5} steps, done: {:.3f}%".format(session_max_score, epsilon, step-prev_steps, 100*step/MAX_STEPS))
                 prev_steps = step
+                session_max_score = 0
         
 
 if __name__ == "__main__":
