@@ -14,7 +14,6 @@ models = {}
 #stride of 4 should still allow the ball (size 4x2) to be recognized in the darkness
 #and reduce image size
 models["deepmind_paper"] = keras.Sequential([
-    
     Conv2D(16, kernel_size=(8,8), strides=4, activation='relu', input_shape=(80,72,4)), 
     Conv2D(32, kernel_size=(4,4), strides=2, activation='relu'),
     Flatten(),

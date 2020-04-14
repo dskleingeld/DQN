@@ -110,17 +110,17 @@ class Stats:
         self.prev_steps = 0
         self.max_steps = max_steps
 
-        self.next_eta_print = ETA_PERIOD
+        self.next_eta_print = REPLAY_START_SIZE
         self.prev_eta_time = time.time()
-        self.prev_eta_step = 0
     def update(self, score):
         self.session_score += score
     
     def eta(self, step):
-        rate = (step - self.prev_eta_step)/(time.time()-self.prev_eta_time)
+        now = time.time()
+        rate = ETA_PERIOD/(now-self.prev_eta_time)
         eta = (self.max_steps-step)/rate
-        self.prev_eta_time = time.time()
-        self.prev_eta_steps = step
+        self.prev_eta_time = now
+        self.next_eta_print = step+ETA_PERIOD
         return seconds_to_duration_str(eta)
 
     def handle(self, model_train, step, epsilon):

@@ -1,6 +1,6 @@
 MAX_STEPS = 10_000_000 #should aim to do 10m
 BATCH_SIZE = 32
-REPLAY_MEMORY_SIZE = 1_000_000
+REPLAY_MEMORY_SIZE = 1_000_000 #might be to large for sysmem to fit
 #agent history len: 4
 DISCOUNT_FACTOR = 0.99 #aka gamma
 #action repeat: 4
@@ -18,4 +18,4 @@ EXPLORATION_DECAY_LEN = 1_000_000
 REPLAY_START_SIZE = 50_000
 
 #profiling prams override:
-MAX_STEPS = REPLAY_START_SIZE+2000
+#MAX_STEPS = REPLAY_START_SIZE+50_000
