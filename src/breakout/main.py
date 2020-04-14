@@ -15,6 +15,7 @@ from models import cropped_scaled_grayscale as reduce_state
 from parts import Memory, Predictor, Epsilon, Stats, State
 from params import *
 
+#profiling note, costs only 2.8% of time which is pretty alright....
 def samples_to_states(samples: List[State]):
     state_dim = samples[0].before.shape
     before_states = np.empty((len(samples),)+state_dim)
@@ -70,15 +71,12 @@ def reset(env, model: Predictor, epsilon: Epsilon, state: State):
             state.push(before, after, action, score, False)
     return before, lives
 
-def main():  
-    env = gym.make("BreakoutDeterministic-v4")
-    #env._max_episode_steps this ensures the game ends if its going well
-
-    env_state_dim = env.observation_space.shape
-    env_action_dim = (env.action_space.__dict__["n"])
-    state = State()
-
-    for spec_name, spec in model_specs.items():
+def train(spec, spec_name):
+        env = gym.make("BreakoutDeterministic-v4")
+        env_state_dim = env.observation_space.shape
+        env_action_dim = (env.action_space.__dict__["n"])
+        state = State()
+        
         model = Predictor(spec)
         model_train = model.clone(spec)
         memory = Memory(maxlen=REPLAY_MEMORY_SIZE)
@@ -87,8 +85,9 @@ def main():
         decay_len = EXPLORATION_DECAY_LEN
         epsilon = Epsilon(decay_len, decay_free)
         stats = Stats(spec_name, MAX_STEPS)
-
         before, lives = reset(env, model, epsilon, state)
+
+        #env._max_episode_steps this ensures the game ends if its going well
         for step in range(MAX_STEPS):
             action = best_action(state.before, model, env, epsilon)
             after, score, game_over, info = env.step(action)
@@ -115,6 +114,9 @@ def main():
                 stats.handle(model_train, step, epsilon)
                 before, lives = reset(env, model, epsilon, state)
         
+def main():  
+    for spec_name, spec in model_specs.items():
+        train(spec, spec_name)
 
 if __name__ == "__main__":
     main()
