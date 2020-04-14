@@ -176,7 +176,6 @@ def main():
                 model.copy_weights_from(model_train)
 
             if game_over:
-                print(f"game over, score: {session_max_score}")
                 before = env.reset()
                 before = reduce_state(before)
                 session_max_score = 0
