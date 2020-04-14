@@ -15,7 +15,7 @@ from models import cropped_grayscale
 from keras.optimizers import Adam
 
 #set keras to use gpu
-LEARNING_RATE = 0.001
+LEARNING_RATE = 0.00001 #large MAX frames is wal larger #TODO make dependent on max frames?
 
 class Memory:
     def __init__(self, maxlen=20000):
@@ -35,11 +35,14 @@ class Epsilon: #simple epsilon decay wont work, need to start with epsilon 1 for
         self.value = start
         self.min = stop
         self.decay_by = (start-self.min)/decay_len_in_steps
-        self.steps_before_decay = steps_before_decay
+        self.no_decay_in_steps = no_decay_in_steps
         self.times_called = 0
     def decay(self):
-        if self.times_called > self.steps_before_decay:
+        if self.times_called > self.no_decay_in_steps:
             self.value = max(self.value-self.decay_by, self.min)
+        self.times_called += 1
+    def __format__(self, formatstr):
+        return self.value.__format__(formatstr)
 
 class Predictor:
     # Note on data shape: keras expects data in the shape (N, m)
@@ -105,19 +108,18 @@ def replay_and_train(memory: Memory, model: Predictor, model_train: Predictor, s
     model_train.model.fit(before_states, predict_effects, verbose=0)
 
 def best_action(state: np.ndarray, model: Predictor, env, epsilon: Epsilon) -> int:
-    epsilon.decay()
-    r = np.random.rand()
-    if epsilon.value > r :
+    if epsilon.value > np.random.rand() :
         action = env.action_space.sample()
+        epsilon.decay()
         return action
     else:
+        epsilon.decay()
         return np.argmax(model.predict(state))
 
 def main():
-    MAX_STEPS = 10_000
-    MAX_SESSIONS = 10
+    MAX_STEPS = 1_000_000
     SAMPLE_SIZE = 32
-    STRIDE=10
+    STRIDE=5 #determined by looking with 1 sec in between
     
     env = gym.make("Breakout-v4")
     env._max_episode_steps = MAX_STEPS+1
@@ -125,57 +127,66 @@ def main():
     env_state_dim = env.observation_space.shape
     env_action_dim = (env.action_space.__dict__["n"])
 
+    import time
     for spec_name, spec in model_specs.items():
         reduce_state = cropped_grayscale
         model = Predictor(spec)
         model_train = model.clone(spec)
         memory = Memory()
 
-        decay_len = 5000
-        decay_free = 5000
-        epsilon = Epsilon()
+        decay_free = 0.2*MAX_STEPS
+        decay_len = 0.3*MAX_STEPS
+        epsilon = Epsilon(decay_len, decay_free)
         highscore = 0#6 #only start storing networks if the score exceeds 6
 
-        for training_session in range(MAX_SESSIONS):
-            before = env.reset()
-            before = reduce_state(before)
-            session_max_score = 0
-            lives = 5
-            for step in range(MAX_STEPS):
-                action = best_action(before, model, env, epsilon)
+        before = env.reset()
+        before = reduce_state(before)
+        session_max_score = 0
+        lives = 5
+        
+        prev_steps = 0
+        for step in range(MAX_STEPS):
+            action = best_action(before, model, env, epsilon)
+            #env.render()
+            #time.sleep(1)
 
-                cum_score = 0
-                #do not think analyse every frame/step
-                for _ in range(STRIDE):
-                    _, score, _, _ = env.step(action)
-                    cum_score += score
-                    env.render()
-
-                #record state of last step
-                after, score, game_over, info = env.step(action)
-                after = reduce_state(after)
+            cum_score = 0
+            #do not think analyse every frame/step
+            for _ in range(STRIDE-1):
+                _, score, _, _ = env.step(action)
                 cum_score += score
-                session_max_score += cum_score
 
-                if info["ale.lives"] < lives: #credits: https://github.com/fg91/Deep-Q-Learning/blob/master/DQN.ipynb
-                    #act as if game over during replay if we lose a life
-                    memory.remember((before, action, after, cum_score, True))
-                else:
-                    memory.remember((before, action, after, cum_score, game_over))
+            #record state of last step
+            after, score, game_over, info = env.step(action)
+            after = reduce_state(after)
+            cum_score += score
+            session_max_score += cum_score
 
-                cum_score = 0
-                replay_and_train(memory, model, model_train, SAMPLE_SIZE)
-                before = after
+            if info["ale.lives"] < lives: #credits: https://github.com/fg91/Deep-Q-Learning/blob/master/DQN.ipynb
+                #act as if game over during replay if we lose a life
+                memory.remember((before, action, after, cum_score, True))
+            else:
+                memory.remember((before, action, after, cum_score, game_over))
 
-                if game_over:
-                    print(f"game over, score: {session_max_score}")
-                    break
+            cum_score = 0
+            replay_and_train(memory, model, model_train, SAMPLE_SIZE)
+            before = after
 
-            if session_max_score > highscore:
-                path = "data/{}_weights.h5".format(spec_name)
-                model_train.save(path) 
-            print("score: {:5}, session: {:5}, took: {:5} steps".format(session_max_score, training_session, step+1))
-            model.copy_weights_from(model_train)
+            if step % 100 == 0:
+                model.copy_weights_from(model_train)
+
+            if game_over:
+                print(f"game over, score: {session_max_score}")
+                before = env.reset()
+                before = reduce_state(before)
+                session_max_score = 0
+                lives = 5
+                
+                if session_max_score > highscore:
+                    path = "data/{}_weights.h5".format(spec_name)
+                    model_train.save(path) 
+                print("score: {:5}, epsilon: {:5.3f}, session took: {:5} steps".format(session_max_score, epsilon, step-prev_steps))
+                prev_steps = step
         
 
 if __name__ == "__main__":
