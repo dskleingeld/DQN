@@ -13,38 +13,12 @@ models = {}
 #8 pixels is half the size of the bar, should recognise that easily
 #stride of 4 should still allow the ball (size 4x2) to be recognized in the darkness
 #and reduce image size
-models["conv_3layers_descending_kernal_size"] = keras.Sequential([
-    Conv2D(32, kernel_size=(8,8), strides=4, activation='relu', input_shape=(160,144,1)), 
-    Conv2D(32, kernel_size=(5,5), strides=2, activation='relu'),
-    Conv2D(32, kernel_size=(3,3), strides=1, activation='relu'),
+models["deepmind_paper"] = keras.Sequential([
+    
+    Conv2D(16, kernel_size=(8,8), strides=4, activation='relu', input_shape=(80,72,4)), 
+    Conv2D(32, kernel_size=(4,4), strides=2, activation='relu'),
     Flatten(),
-    Dense(16, activation='relu'),
-    Dense(4, activation="linear")
-])
-models["conv_3layers_descending_kernal_size_deeper"] = keras.Sequential([
-    Conv2D(32, kernel_size=(8,8), strides=4, activation='relu', input_shape=(160,144,1)), 
-    Conv2D(32, kernel_size=(5,5), strides=2, activation='relu'),
-    Conv2D(32, kernel_size=(3,3), strides=1, activation='relu'),
-    Flatten(),
-    Dense(16, activation='relu'),
-    Dense(16, activation='relu'),
-    Dense(4, activation="linear")
-])
-models["conv_3layers_small_kernals"] = keras.Sequential([ #
-    Conv2D(32, kernel_size=(5,5), strides=2, activation='relu', input_shape=(160,144,1)),
-    Conv2D(32, kernel_size=(3,3), strides=2, activation='relu'),
-    Conv2D(32, kernel_size=(3,3), strides=1, activation='relu'),
-    Flatten(),
-    Dense(16, activation='relu'),
-    Dense(4, activation="linear")
-])
-models["conv_3layers_small_kernals_deeper"] = keras.Sequential([ #
-    Conv2D(32, kernel_size=(5,5), strides=2, activation='relu', input_shape=(160,144,1)),
-    Conv2D(32, kernel_size=(3,3), strides=2, activation='relu'),
-    Conv2D(32, kernel_size=(3,3), strides=1, activation='relu'),
-    Flatten(),
-    Dense(16, activation='relu'),
-    Dense(16, activation='relu'),
+    Dense(256, activation='relu'),
     Dense(4, activation="linear")
 ])
 
@@ -67,3 +41,12 @@ def cropped_grayscale(state: np.ndarray) -> np.ndarray:
     #plt.show()
     return gray_state
 
+#cant use, scipy.misc.imresize deprecated may not use scikit-image
+def cropped_scaled_grayscale(state: np.ndarray) -> np.ndarray:
+    cropped_state = crop(state)
+    gray_state = to_grayscale(cropped_state)
+    resized = gray_state[::2, ::2]
+    #print(f"size: {resized.shape}")
+    #plt.imshow(resized, cmap=plt.cm.gray)
+    #plt.show()
+    return resized
