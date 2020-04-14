@@ -103,10 +103,9 @@ def seconds_to_duration_str(secs: float):
 
 ETA_PERIOD = 10_000
 class Stats:
-    def __init__(self, spec_name, max_steps):
+    def __init__(self, max_steps):
         self.session_score = 0
         self.highscore = 0
-        self.spec_name = spec_name
         self.prev_steps = 0
         self.max_steps = max_steps
 
@@ -126,7 +125,7 @@ class Stats:
     def handle(self, model_train, step, epsilon):
         if self.session_score > self.highscore:
             self.highscore = self.session_score
-            path = "data/{}_weights.h5".format(self.spec_name)
+            path = "data/score_{}_weights.h5".format(self.highscore)
             model_train.save(path) 
         
         if step > self.next_eta_print:

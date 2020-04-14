@@ -9,7 +9,7 @@ import random
 import gym
 import numpy as np
 
-from models import models as model_specs
+from models import models as specs
 from models import cropped_scaled_grayscale as reduce_state
 
 from parts import Memory, Predictor, Epsilon, Stats, State
@@ -71,52 +71,50 @@ def reset(env, model: Predictor, epsilon: Epsilon, state: State):
             state.push(before, after, action, score, False)
     return before, lives
 
-def train(spec, spec_name):
-        env = gym.make("BreakoutDeterministic-v4")
-        env_state_dim = env.observation_space.shape
-        env_action_dim = (env.action_space.__dict__["n"])
-        state = State()
+def train():
+    env = gym.make("BreakoutDeterministic-v4")
+    env_state_dim = env.observation_space.shape
+    env_action_dim = (env.action_space.__dict__["n"])
+    state = State()
+    
+    model = Predictor(specs["deepmind_paper"])
+    model_train = model.clone(specs["deepmind_paper"])
+    memory = Memory(maxlen=REPLAY_MEMORY_SIZE)
+
+    decay_free = 0
+    decay_len = EXPLORATION_DECAY_LEN
+    epsilon = Epsilon(decay_len, decay_free)
+    stats = Stats(MAX_STEPS)
+    before, lives = reset(env, model, epsilon, state)
+
+    #env._max_episode_steps this ensures the game ends if its going well
+    for step in range(MAX_STEPS):
+        action = best_action(state.before, model, env, epsilon)
+        after, score, game_over, info = env.step(action)
+        after = reduce_state(after)
+
+
+        if info["ale.lives"] < lives: #credits: https://github.com/fg91/Deep-Q-Learning/blob/master/DQN.ipynb
+            #act as if game over during replay if we lose a life
+            lives = info["ale.lives"]
+            state.push(before, after, action, score, True)
+        else:
+            state.push(before, after, action, score, game_over)
+        memory.remember(deepcopy(state))
+        replay_and_train(memory, model, model_train, BATCH_SIZE)
         
-        model = Predictor(spec)
-        model_train = model.clone(spec)
-        memory = Memory(maxlen=REPLAY_MEMORY_SIZE)
 
-        decay_free = 0
-        decay_len = EXPLORATION_DECAY_LEN
-        epsilon = Epsilon(decay_len, decay_free)
-        stats = Stats(spec_name, MAX_STEPS)
-        before, lives = reset(env, model, epsilon, state)
-
-        #env._max_episode_steps this ensures the game ends if its going well
-        for step in range(MAX_STEPS):
-            action = best_action(state.before, model, env, epsilon)
-            after, score, game_over, info = env.step(action)
-            after = reduce_state(after)
+        before = after
+        if step % 100 == 0:
+            model.copy_weights_from(model_train)
+            if step % MAX_STEPS/100 == 0:
+                model.save("data/step_{}_weights".format(step))
 
 
-            if info["ale.lives"] < lives: #credits: https://github.com/fg91/Deep-Q-Learning/blob/master/DQN.ipynb
-                #act as if game over during replay if we lose a life
-                lives = info["ale.lives"]
-                state.push(before, after, action, score, True)
-            else:
-                state.push(before, after, action, score, game_over)
-            memory.remember(deepcopy(state))
-            replay_and_train(memory, model, model_train, BATCH_SIZE)
-            
-
-            before = after
-            if step % 100 == 0:
-                model.copy_weights_from(model_train)
-
-
-            stats.update(score)
-            if game_over:
-                stats.handle(model_train, step, epsilon)
-                before, lives = reset(env, model, epsilon, state)
-        
-def main():  
-    for spec_name, spec in model_specs.items():
-        train(spec, spec_name)
+        stats.update(score)
+        if game_over:
+            stats.handle(model_train, step, epsilon)
+            before, lives = reset(env, model, epsilon, state)
 
 if __name__ == "__main__":
-    main()
+    train()
