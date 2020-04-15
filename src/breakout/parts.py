@@ -93,6 +93,9 @@ class Predictor:
     def save(self, path: str):
         self.model.save_weights(path)
 
+    def load(self, path: str):
+        self.model.load_weights(path)
+
 
 def seconds_to_duration_str(secs: float):
     total_minutes = int(secs) // 60

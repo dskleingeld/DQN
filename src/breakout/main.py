@@ -71,13 +71,14 @@ def reset(env, model: Predictor, epsilon: Epsilon, state: State):
             state.push(before, after, action, score, False)
     return before, lives
 
-def train():
+def train(model=None):
     env = gym.make("BreakoutDeterministic-v4")
     env_state_dim = env.observation_space.shape
     env_action_dim = (env.action_space.__dict__["n"])
     state = State()
     
-    model = Predictor(specs["deepmind_paper"])
+    if model is None:
+        model = Predictor(specs["deepmind_paper"])
     model_train = model.clone(specs["deepmind_paper"])
     memory = Memory(maxlen=REPLAY_MEMORY_SIZE)
 
@@ -107,8 +108,8 @@ def train():
         before = after
         if step % 100 == 0:
             model.copy_weights_from(model_train)
-            if step % MAX_STEPS/100 == 0:
-                model.save("data/step_{}_weights".format(step))
+        if step % MAX_STEPS/100 == 0:
+            model.save("data/step_{}_weights".format(step))
 
 
         stats.update(score)
@@ -117,4 +118,6 @@ def train():
             before, lives = reset(env, model, epsilon, state)
 
 if __name__ == "__main__":
-    train()
+    model = Predictor(specs["deepmind_paper"])
+    model.load("data/score_11.0_weights.h5")
+    train(model=)
