@@ -1,7 +1,7 @@
 MAX_STEPS = 10_000_000 #should aim to do 10m
 BATCH_SIZE = 32
 #REPLAY_MEMORY_SIZE = 1_000_000 #might be to large for sysmem to fit
-REPLAY_MEMORY_SIZE = 1_000_000/4 #ran out of sysmem, this should take up around 12G
+REPLAY_MEMORY_SIZE = 1_000_000//4 #ran out of sysmem, this should take up around 12G
 #agent history len: 4
 DISCOUNT_FACTOR = 0.99 #aka gamma
 #action repeat: 4

@@ -51,12 +51,12 @@ class Memory:
             return []
 
 class Epsilon:
-    def __init__(self, start=1.0, min=0.01, decay=0.05):
+    def __init__(self, start=0.0, min=0.0, decay=0.05): #was 1.0, 0.01, 0.05
         self.value = start
         self.min = min
         self.decay_by = decay
     def decay(self):
-        self.value = min(self.value-self.decay_by, self.min)
+        self.value = max(self.value-self.decay_by, self.min)
 
 class Predictor:
     # Note on data shape: keras expects data in the shape (N, m)
@@ -178,7 +178,6 @@ def main():
             after, score, success, debug = env.step(action) # returns [state: numpy.ndarray, reward: float, done: bool, debug: dict]
 
             if success:
-                #epsilon.decay()
                 score = 10
 
             memory.remember((before, action, after, score, success))
@@ -187,9 +186,7 @@ def main():
             before = after
     
             if success:
-                env.render()
                 print(after, score, success, debug)
-                #input("Press Enter to continue...")
                 break
             
 

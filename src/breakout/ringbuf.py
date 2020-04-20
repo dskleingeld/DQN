@@ -2,7 +2,7 @@
 #credits: Adrien Lucas Ecoffet
 
 class RingBuf:
-    def __init__(self, size):
+    def __init__(self, size: int):
         # Pro-tip: when implementing a ring buffer, always allocate one extra element,
         # this way, self.start == self.end always means the buffer is EMPTY, whereas
         # if you allocate exactly the right number of elements, it could also mean

@@ -41,6 +41,7 @@ class Memory:
     def __len__(self):
         return len(self.events)
 
+
 class Epsilon: #simple epsilon decay wont work, need to start with epsilon 1 for a long time
     def __init__(self, decay_len_in_steps: int, no_decay_in_steps: int, start=INIT_EXPLORATION, stop=FINAL_EXPLORATION):
         self.value = start
