@@ -6,40 +6,83 @@ import time
 
 from params import *
 
+FLAT_IMG_SIZE = 5760
+
 class State:
+    SINGLE_STATE_SIZE = 11523 #flat size of state = 2*80*72+3 = 5763 (action, score, done = 3)
     def __init__(self):
-        self.before = np.empty((80,72,4), dtype=np.uint8)
+        self.before = np.empty((80,72,4), dtype=np.uint8) #last state at -1
         self.after = np.empty((80,72,4), dtype=np.uint8)
         self.action = None
         self.score = None
         self.done = None
+        
     def roll(self):
         self.before = np.roll(self.before,-1, axis=2)
         self.after = np.roll(self.after,-1, axis=2)
+
     def push(self, before:np.ndarray, after:np.ndarray, action: int, score: int, done: bool):
         self.roll()
         self.before[:,:,3] = before
         self.after[:,:,3] = after
-        
         self.action = action
         self.score = score
         self.done = done
 
+    def flatten_into(self, data):
+        data[0:FLAT_IMG_SIZE] = self.before[:,:,-1].flat
+        data[FLAT_IMG_SIZE:2*FLAT_IMG_SIZE] = self.after[:,:,-1].flat
+        data[2*FLAT_IMG_SIZE+0] = self.action
+        data[2*FLAT_IMG_SIZE+1] = self.score
+        data[2*FLAT_IMG_SIZE+2] = int(self.done)
+
 
 class Memory:
-    def __init__(self, maxlen=REPLAY_MEMORY_SIZE):
-        self.events = RingBuf(maxlen)
 
-    def remember(self, event: State):
-        self.events.append(event)
+    def __init__(self, maxlen=REPLAY_MEMORY_SIZE):
+        self.data = np.empty((maxlen, State.SINGLE_STATE_SIZE), dtype=np.uint8)
+        self.start = 0
+        self.end = 0
+
+    def remember(self, state: State):
+        state.flatten_into(self.data[self.end])
+
+        self.end = (self.end + 1) % len(self.data)
+        # end == start and yet we just added one element. This means the buffer has one
+        # too many element. Remove the first element by incrementing start.
+        if self.end == self.start:
+            self.start = (self.start + 1) % len(self.data)
+
+    def create_state(self, i):
+        state = State()
+        for j in range(4): #add the states 
+            state.before[:,:,j] = self.data[i+j,0:FLAT_IMG_SIZE].reshape((80,72))
+            state.after[:,:,j] = self.data[i+j,FLAT_IMG_SIZE:2*FLAT_IMG_SIZE].reshape((80,72))
+
+        state.action = self.data[i+3, 2*FLAT_IMG_SIZE+0]
+        state.score = self.data[i+3, 2*FLAT_IMG_SIZE+1]
+        state.done = self.data[i+3, 2*FLAT_IMG_SIZE+1]
+        state.push
+        return state
+
+    def random_valid_state(self):
+        while(True): #skip states that do not have 3 consecutive non-failing states before them
+            i = np.random.randint(3, len(self))#take a state
+            if (self.data[i+2, -1] == int(False) and 
+                self.data[i+1, -1] == int(False) and
+                self.data[i+0, -1] == int(False)):
+                
+                return self.create_state(i)
 
     def sample(self, size): #return 50 samples
-        indices = np.random.randint(0, len(self.events), size)
-        samples = [self.events[i] for i in indices]
+        samples = []
+        for _ in range(size):
+            state = self.random_valid_state()
+            samples.append(state)
         return samples
 
     def __len__(self):
-        return len(self.events)
+        return self.end-self.start
 
 
 class Epsilon: #simple epsilon decay wont work, need to start with epsilon 1 for a long time

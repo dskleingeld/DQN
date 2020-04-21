@@ -101,7 +101,7 @@ def train(model=None):
             state.push(before, after, action, score, True)
         else:
             state.push(before, after, action, score, game_over)
-        memory.remember(deepcopy(state))
+        memory.remember(state)
         replay_and_train(memory, model, model_train, BATCH_SIZE)
         
 
@@ -119,5 +119,5 @@ def train(model=None):
 
 if __name__ == "__main__":
     model = Predictor(specs["deepmind_paper"])
-    model.load("data/score_11.0_weights.h5")
-    train(model=)
+    #model.load("data/score_11.0_weights.h5")
+    train(model=model)
