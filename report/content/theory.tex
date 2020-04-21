@@ -1,0 +1,25 @@
+Here we will give a short theoretical introduction to deep Q-networks (DQN). A DQN is capable of learning a diverse array of challanging tasks without hand coded domain specific knowledge. Recieving only the state of its envirement it returns one of the given possible actions, it then gets feedback in the form of a reward.
+
+DQN is based on Q-learning or action-value learning. In Q-learning the Q function \autoref{eq:Q} calculates the quality of a state-action combination. The outcome is then stored in the Q table and can be used to create more Q values. When an action is required the action with the highest Q value in the table is performed.
+
+\begin{align} \label{eq:Q}
+Q^{n e w}\left(s_{t}, a_{t}\right) \leftarrow 
+(1-\alpha)\cdot\underbrace{Q\left(s_{t}, a_{t}\right)}_{\text {old value }} 
+%
++\underbrace{\alpha}_{\text {learning rate }} \cdot (\underbrace{r_{t}}_{\text {reward }}
++\underbrace{\gamma}_{\text {discount factor }} \cdot \underbrace{\max _{a} Q\left(s_{t+1}, a\right)}_{\text {estimate of future value }})
+\end{align}
+
+Here $Q^{new}$ is the new Q-value for the state $s_t$ and action $a_t$. We calculate it by combining the old Q value with new information we learned as we transitioned to state $s_{t+1}$ by action $a_t$. We weigh the combination with the learning rate $\alpha$, the higher the learning rate the higher the impact of the new information. The new information consists of the reward $r_t$ and Q value of the best action we can take from here\footnote{as the best action is the action with the highest Q value we can add the maximum Q value corrosponding to the new state $s_{t+1}$ we are now in.}: $\max _{a} Q\left(s_{t+1}, a\right)$ We additionally weigh this by the discount factor $\gamma$ which determines how importend future rewards are. 
+
+Initially the Q table is empty and it will need training. The only way to fill the table is to performce random actions, using the reward to find the Q-value. A good strategy is to let the rate of random actions $\epsilon$ decrease throughout the training process. Starting at $\epsilon = 1$ and ending at $\epsilon = 0.1$.
+
+This table based way of learning has only limited applications. For example if we where to apply Q-learning to the mountain car problem \autoref{sec:mountain_car} we would immidiately run into a problem. The needed Q-table would need to be infinite\footnote{ignoring the limited resolution of the \texttt{doubles} used to represent the state of the car}. While this can be solved by discretizing the input before the Q-learning algorithm there are many more complex problem where this is not feasable. One of these is our second problem, the atari game breakout, see \autoref{sec:breakout}. For this we turn to DQN.
+
+In DQN the optimal action-value is approximated by a neural network. When we need to perform an action we ask the neural network to make predictions for the Q-values for all the different possible actions. We then pick the action with the highest predicted Q-value. 
+ 
+Initially the neural network will behave like the empty table from Q-learning, not knowing the right Q value. However as we train the network it wil converge to the Q value. The network is trained with as input the state and action and as label the correct Q-value as calculated from \autoref{eq:Q}, getting $Q\left(s_{t+1}, a\right)$ and $Q\left(s_{t}, a\right)$ by asking the network to make a prediction for input $[s_{t+1}, a]$ and $[s_{t}, a]$ respectively. 
+
+There is a danger in using a neural network. The reinforcement learning can become unstable\cite{triad}. This is attributed to the \textit{deadly triad}: function approximation, bootstrapping and off policy learning. The Q-function is approximated by the neural network based on features recognized in states states that should have a different Q-values may share the same features leading to loops in behavior. Bootstrapping, or basing the new Q-values partially on the old may exaggerate the problems introduced by the imperfect approximation. Finally DQN uses off policy learning it converges less well then on policy learning.
+
+Mnih, Koray Kavukcuoglu, and Silver\cite{DQN} adress these instabilities using a replay buffer. By storing the states, actions and corrosponding reward the network can learn on results out of order. This breaks feedback loops solving the unstability described above. Another significant improvement made is infrequent weight updates. Here a seperate network is used for the predictions. This prevents the network from returning values based on newly learned behaviour while training causing those behaviours to be reinforced entering a feedback loop. Once in a while the network used for prediction is replaced with the current training network.
