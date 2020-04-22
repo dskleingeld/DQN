@@ -1,0 +1,1377 @@
+2
+3
+2
+3
+1.0
+training session 0 done in 200 steps, espsilon: 0.9900000000000011
+training session 1 done in 200 steps, espsilon: 0.9800000000000022
+training session 2 done in 200 steps, espsilon: 0.9700000000000033
+training session 3 done in 200 steps, espsilon: 0.9600000000000044
+training session 4 done in 200 steps, espsilon: 0.9500000000000055
+training session 5 done in 200 steps, espsilon: 0.9400000000000066
+training session 6 done in 200 steps, espsilon: 0.9300000000000077
+training session 7 done in 200 steps, espsilon: 0.9200000000000088
+training session 8 done in 200 steps, espsilon: 0.9100000000000099
+training session 9 done in 200 steps, espsilon: 0.900000000000011
+training session 10 done in 200 steps, espsilon: 0.8900000000000121
+training session 11 done in 200 steps, espsilon: 0.8800000000000132
+training session 12 done in 200 steps, espsilon: 0.8700000000000143
+training session 13 done in 200 steps, espsilon: 0.8600000000000154
+training session 14 done in 200 steps, espsilon: 0.8500000000000165
+training session 15 done in 200 steps, espsilon: 0.8400000000000176
+training session 16 done in 200 steps, espsilon: 0.8300000000000187
+training session 17 done in 200 steps, espsilon: 0.8200000000000198
+training session 18 done in 200 steps, espsilon: 0.8100000000000209
+training session 19 done in 200 steps, espsilon: 0.800000000000022
+training session 20 done in 200 steps, espsilon: 0.7900000000000231
+training session 21 done in 200 steps, espsilon: 0.7800000000000242
+training session 22 done in 200 steps, espsilon: 0.7700000000000253
+training session 23 done in 200 steps, espsilon: 0.7600000000000264
+training session 24 done in 200 steps, espsilon: 0.7500000000000275
+training session 25 done in 200 steps, espsilon: 0.7400000000000286
+training session 26 done in 200 steps, espsilon: 0.7300000000000297
+training session 27 done in 200 steps, espsilon: 0.7200000000000308
+training session 28 done in 200 steps, espsilon: 0.7100000000000319
+training session 29 done in 200 steps, espsilon: 0.700000000000033
+training session 30 done in 200 steps, espsilon: 0.6900000000000341
+training session 31 done in 200 steps, espsilon: 0.6800000000000352
+training session 32 done in 200 steps, espsilon: 0.6700000000000363
+training session 33 done in 200 steps, espsilon: 0.6600000000000374
+training session 34 done in 200 steps, espsilon: 0.6500000000000385
+training session 35 done in 200 steps, espsilon: 0.6400000000000396
+training session 36 done in 200 steps, espsilon: 0.6300000000000407
+training session 37 done in 200 steps, espsilon: 0.6200000000000419
+training session 38 done in 200 steps, espsilon: 0.610000000000043
+training session 39 done in 200 steps, espsilon: 0.600000000000044
+training session 40 done in 200 steps, espsilon: 0.5900000000000452
+training session 41 done in 200 steps, espsilon: 0.5800000000000463
+training session 42 done in 200 steps, espsilon: 0.5700000000000474
+training session 43 done in 200 steps, espsilon: 0.5600000000000485
+training session 44 done in 200 steps, espsilon: 0.5500000000000496
+training session 45 done in 200 steps, espsilon: 0.5400000000000507
+training session 46 done in 200 steps, espsilon: 0.5300000000000518
+training session 47 done in 200 steps, espsilon: 0.5200000000000529
+training session 48 done in 200 steps, espsilon: 0.510000000000054
+training session 49 done in 200 steps, espsilon: 0.5000000000000551
+training session 50 done in 200 steps, espsilon: 0.49000000000005617
+training session 51 done in 200 steps, espsilon: 0.48000000000005727
+training session 52 done in 200 steps, espsilon: 0.47000000000005837
+training session 53 done in 200 steps, espsilon: 0.4600000000000595
+training session 54 done in 200 steps, espsilon: 0.4500000000000606
+training session 55 done in 200 steps, espsilon: 0.4400000000000617
+training session 56 done in 200 steps, espsilon: 0.4300000000000628
+training session 57 done in 200 steps, espsilon: 0.4200000000000639
+training session 58 done in 200 steps, espsilon: 0.410000000000065
+training session 59 done in 200 steps, espsilon: 0.4000000000000661
+training session 60 done in 200 steps, espsilon: 0.3900000000000672
+training session 61 done in 200 steps, espsilon: 0.3800000000000683
+training session 62 done in 200 steps, espsilon: 0.3700000000000694
+training session 63 done in 200 steps, espsilon: 0.3600000000000705
+training session 64 done in 200 steps, espsilon: 0.3500000000000716
+training session 65 done in 200 steps, espsilon: 0.3400000000000727
+training session 66 done in 200 steps, espsilon: 0.3300000000000738
+training session 67 done in 200 steps, espsilon: 0.3200000000000749
+training session 68 done in 200 steps, espsilon: 0.310000000000076
+training session 69 done in 200 steps, espsilon: 0.3000000000000771
+training session 70 done in 200 steps, espsilon: 0.2900000000000782
+training session 71 done in 200 steps, espsilon: 0.2800000000000793
+training session 72 done in 200 steps, espsilon: 0.2700000000000804
+training session 73 done in 200 steps, espsilon: 0.2600000000000815
+training session 74 done in 200 steps, espsilon: 0.2500000000000826
+training session 75 done in 200 steps, espsilon: 0.2400000000000837
+training session 76 done in 200 steps, espsilon: 0.2300000000000848
+training session 77 done in 200 steps, espsilon: 0.2200000000000859
+training session 78 done in 200 steps, espsilon: 0.210000000000087
+training session 79 done in 200 steps, espsilon: 0.2000000000000881
+training session 80 done in 200 steps, espsilon: 0.1900000000000892
+training session 81 done in 200 steps, espsilon: 0.1800000000000903
+training session 82 done in 200 steps, espsilon: 0.1700000000000914
+training session 83 done in 200 steps, espsilon: 0.1600000000000925
+training session 84 done in 200 steps, espsilon: 0.15000000000009361
+training session 85 done in 200 steps, espsilon: 0.14000000000009472
+training session 86 done in 200 steps, espsilon: 0.13000000000009582
+training session 87 done in 200 steps, espsilon: 0.12000000000009692
+training session 88 done in 200 steps, espsilon: 0.11000000000009802
+training session 89 done in 200 steps, espsilon: 0.10000000000009912
+training session 90 done in 200 steps, espsilon: 0.09000000000010022
+training session 91 done in 200 steps, espsilon: 0.08000000000010132
+training session 92 done in 200 steps, espsilon: 0.07000000000010242
+training session 93 done in 200 steps, espsilon: 0.06000000000010318
+training session 94 done in 200 steps, espsilon: 0.05000000000010289
+training session 95 done in 200 steps, espsilon: 0.040000000000102606
+training session 96 done in 200 steps, espsilon: 0.03000000000010232
+training session 97 done in 200 steps, espsilon: 0.020000000000102033
+training session 98 done in 200 steps, espsilon: 0.010000000000101943
+training session 99 done in 200 steps, espsilon: 0.01
+training session 100 done in 200 steps, espsilon: 0.01
+training session 101 done in 200 steps, espsilon: 0.01
+training session 102 done in 200 steps, espsilon: 0.01
+training session 103 done in 200 steps, espsilon: 0.01
+training session 104 done in 200 steps, espsilon: 0.01
+training session 105 done in 200 steps, espsilon: 0.01
+training session 106 done in 200 steps, espsilon: 0.01
+training session 107 done in 200 steps, espsilon: 0.01
+training session 108 done in 200 steps, espsilon: 0.01
+training session 109 done in 200 steps, espsilon: 0.01
+training session 110 done in 200 steps, espsilon: 0.01
+training session 111 done in 200 steps, espsilon: 0.01
+training session 112 done in 200 steps, espsilon: 0.01
+training session 113 done in 200 steps, espsilon: 0.01
+training session 114 done in 200 steps, espsilon: 0.01
+training session 115 done in 200 steps, espsilon: 0.01
+training session 116 done in 200 steps, espsilon: 0.01
+training session 117 done in 200 steps, espsilon: 0.01
+training session 118 done in 200 steps, espsilon: 0.01
+training session 119 done in 200 steps, espsilon: 0.01
+training session 120 done in 200 steps, espsilon: 0.01
+training session 121 done in 200 steps, espsilon: 0.01
+training session 122 done in 200 steps, espsilon: 0.01
+training session 123 done in 200 steps, espsilon: 0.01
+training session 124 done in 200 steps, espsilon: 0.01
+training session 125 done in 200 steps, espsilon: 0.01
+training session 126 done in 200 steps, espsilon: 0.01
+training session 127 done in 200 steps, espsilon: 0.01
+training session 128 done in 200 steps, espsilon: 0.01
+training session 129 done in 200 steps, espsilon: 0.01
+training session 130 done in 200 steps, espsilon: 0.01
+training session 131 done in 200 steps, espsilon: 0.01
+training session 132 done in 200 steps, espsilon: 0.01
+training session 133 done in 200 steps, espsilon: 0.01
+training session 134 done in 200 steps, espsilon: 0.01
+training session 135 done in 200 steps, espsilon: 0.01
+training session 136 done in 200 steps, espsilon: 0.01
+training session 137 done in 200 steps, espsilon: 0.01
+training session 138 done in 200 steps, espsilon: 0.01
+training session 139 done in 200 steps, espsilon: 0.01
+training session 140 done in 200 steps, espsilon: 0.01
+training session 141 done in 200 steps, espsilon: 0.01
+training session 142 done in 200 steps, espsilon: 0.01
+training session 143 done in 200 steps, espsilon: 0.01
+training session 144 done in 200 steps, espsilon: 0.01
+training session 145 done in 200 steps, espsilon: 0.01
+training session 146 done in 200 steps, espsilon: 0.01
+training session 147 done in 200 steps, espsilon: 0.01
+training session 148 done in 200 steps, espsilon: 0.01
+training session 149 done in 200 steps, espsilon: 0.01
+training session 150 done in 200 steps, espsilon: 0.01
+training session 151 done in 200 steps, espsilon: 0.01
+training session 152 done in 200 steps, espsilon: 0.01
+training session 153 done in 200 steps, espsilon: 0.01
+training session 154 done in 200 steps, espsilon: 0.01
+training session 155 done in 200 steps, espsilon: 0.01
+training session 156 done in 200 steps, espsilon: 0.01
+training session 157 done in 200 steps, espsilon: 0.01
+training session 158 done in 200 steps, espsilon: 0.01
+training session 159 done in 200 steps, espsilon: 0.01
+training session 160 done in 200 steps, espsilon: 0.01
+training session 161 done in 200 steps, espsilon: 0.01
+training session 162 done in 200 steps, espsilon: 0.01
+training session 163 done in 200 steps, espsilon: 0.01
+training session 164 done in 200 steps, espsilon: 0.01
+training session 165 done in 200 steps, espsilon: 0.01
+training session 166 done in 200 steps, espsilon: 0.01
+training session 167 done in 200 steps, espsilon: 0.01
+training session 168 done in 200 steps, espsilon: 0.01
+training session 169 done in 200 steps, espsilon: 0.01
+training session 170 done in 200 steps, espsilon: 0.01
+training session 171 done in 200 steps, espsilon: 0.01
+training session 172 done in 200 steps, espsilon: 0.01
+training session 173 done in 200 steps, espsilon: 0.01
+training session 174 done in 200 steps, espsilon: 0.01
+training session 175 done in 200 steps, espsilon: 0.01
+training session 176 done in 200 steps, espsilon: 0.01
+training session 177 done in 200 steps, espsilon: 0.01
+training session 178 done in 200 steps, espsilon: 0.01
+training session 179 done in 200 steps, espsilon: 0.01
+training session 180 done in 200 steps, espsilon: 0.01
+training session 181 done in 200 steps, espsilon: 0.01
+training session 182 done in 200 steps, espsilon: 0.01
+training session 183 done in 200 steps, espsilon: 0.01
+training session 184 done in 200 steps, espsilon: 0.01
+training session 185 done in 200 steps, espsilon: 0.01
+training session 186 done in 200 steps, espsilon: 0.01
+training session 187 done in 200 steps, espsilon: 0.01
+training session 188 done in 200 steps, espsilon: 0.01
+training session 189 done in 200 steps, espsilon: 0.01
+training session 190 done in 200 steps, espsilon: 0.01
+training session 191 done in 200 steps, espsilon: 0.01
+training session 192 done in 200 steps, espsilon: 0.01
+training session 193 done in 200 steps, espsilon: 0.01
+training session 194 done in 200 steps, espsilon: 0.01
+training session 195 done in 200 steps, espsilon: 0.01
+training session 196 done in 200 steps, espsilon: 0.01
+training session 197 done in 200 steps, espsilon: 0.01
+training session 198 done in 200 steps, espsilon: 0.01
+training session 199 done in 200 steps, espsilon: 0.01
+training session 200 done in 200 steps, espsilon: 0.01
+training session 201 done in 200 steps, espsilon: 0.01
+training session 202 done in 200 steps, espsilon: 0.01
+training session 203 done in 200 steps, espsilon: 0.01
+training session 204 done in 200 steps, espsilon: 0.01
+training session 205 done in 200 steps, espsilon: 0.01
+training session 206 done in 200 steps, espsilon: 0.01
+training session 207 done in 200 steps, espsilon: 0.01
+training session 208 done in 200 steps, espsilon: 0.01
+training session 209 done in 200 steps, espsilon: 0.01
+training session 210 done in 200 steps, espsilon: 0.01
+training session 211 done in 200 steps, espsilon: 0.01
+training session 212 done in 200 steps, espsilon: 0.01
+training session 213 done in 200 steps, espsilon: 0.01
+training session 214 done in 200 steps, espsilon: 0.01
+training session 215 done in 200 steps, espsilon: 0.01
+training session 216 done in 200 steps, espsilon: 0.01
+training session 217 done in 200 steps, espsilon: 0.01
+training session 218 done in 200 steps, espsilon: 0.01
+training session 219 done in 200 steps, espsilon: 0.01
+training session 220 done in 200 steps, espsilon: 0.01
+training session 221 done in 200 steps, espsilon: 0.01
+training session 222 done in 200 steps, espsilon: 0.01
+training session 223 done in 200 steps, espsilon: 0.01
+training session 224 done in 200 steps, espsilon: 0.01
+training session 225 done in 200 steps, espsilon: 0.01
+training session 226 done in 200 steps, espsilon: 0.01
+training session 227 done in 200 steps, espsilon: 0.01
+training session 228 done in 200 steps, espsilon: 0.01
+training session 229 done in 200 steps, espsilon: 0.01
+training session 230 done in 200 steps, espsilon: 0.01
+training session 231 done in 200 steps, espsilon: 0.01
+training session 232 done in 200 steps, espsilon: 0.01
+training session 233 done in 200 steps, espsilon: 0.01
+training session 234 done in 200 steps, espsilon: 0.01
+training session 235 done in 200 steps, espsilon: 0.01
+training session 236 done in 200 steps, espsilon: 0.01
+training session 237 done in 200 steps, espsilon: 0.01
+training session 238 done in 200 steps, espsilon: 0.01
+training session 239 done in 200 steps, espsilon: 0.01
+training session 240 done in 200 steps, espsilon: 0.01
+training session 241 done in 200 steps, espsilon: 0.01
+training session 242 done in 200 steps, espsilon: 0.01
+training session 243 done in 200 steps, espsilon: 0.01
+training session 244 done in 200 steps, espsilon: 0.01
+training session 245 done in 200 steps, espsilon: 0.01
+training session 246 done in 200 steps, espsilon: 0.01
+training session 247 done in 200 steps, espsilon: 0.01
+training session 248 done in 200 steps, espsilon: 0.01
+training session 249 done in 200 steps, espsilon: 0.01
+training session 250 done in 200 steps, espsilon: 0.01
+training session 251 done in 200 steps, espsilon: 0.01
+training session 252 done in 200 steps, espsilon: 0.01
+training session 253 done in 200 steps, espsilon: 0.01
+training session 254 done in 200 steps, espsilon: 0.01
+training session 255 done in 200 steps, espsilon: 0.01
+training session 256 done in 200 steps, espsilon: 0.01
+training session 257 done in 200 steps, espsilon: 0.01
+training session 258 done in 200 steps, espsilon: 0.01
+training session 259 done in 200 steps, espsilon: 0.01
+training session 260 done in 200 steps, espsilon: 0.01
+training session 261 done in 200 steps, espsilon: 0.01
+training session 262 done in 200 steps, espsilon: 0.01
+training session 263 done in 200 steps, espsilon: 0.01
+training session 264 done in 200 steps, espsilon: 0.01
+training session 265 done in 200 steps, espsilon: 0.01
+training session 266 done in 200 steps, espsilon: 0.01
+training session 267 done in 200 steps, espsilon: 0.01
+training session 268 done in 200 steps, espsilon: 0.01
+training session 269 done in 200 steps, espsilon: 0.01
+training session 270 done in 200 steps, espsilon: 0.01
+training session 271 done in 200 steps, espsilon: 0.01
+training session 272 done in 200 steps, espsilon: 0.01
+training session 273 done in 200 steps, espsilon: 0.01
+training session 274 done in 200 steps, espsilon: 0.01
+training session 275 done in 200 steps, espsilon: 0.01
+training session 276 done in 200 steps, espsilon: 0.01
+training session 277 done in 200 steps, espsilon: 0.01
+training session 278 done in 200 steps, espsilon: 0.01
+training session 279 done in 200 steps, espsilon: 0.01
+training session 280 done in 200 steps, espsilon: 0.01
+training session 281 done in 200 steps, espsilon: 0.01
+training session 282 done in 200 steps, espsilon: 0.01
+training session 283 done in 200 steps, espsilon: 0.01
+training session 284 done in 200 steps, espsilon: 0.01
+training session 285 done in 200 steps, espsilon: 0.01
+training session 286 done in 200 steps, espsilon: 0.01
+training session 287 done in 200 steps, espsilon: 0.01
+training session 288 done in 200 steps, espsilon: 0.01
+training session 289 done in 200 steps, espsilon: 0.01
+training session 290 done in 200 steps, espsilon: 0.01
+training session 291 done in 200 steps, espsilon: 0.01
+training session 292 done in 200 steps, espsilon: 0.01
+training session 293 done in 200 steps, espsilon: 0.01
+training session 294 done in 200 steps, espsilon: 0.01
+training session 295 done in 200 steps, espsilon: 0.01
+training session 296 done in 200 steps, espsilon: 0.01
+training session 297 done in 200 steps, espsilon: 0.01
+training session 298 done in 200 steps, espsilon: 0.01
+training session 299 done in 200 steps, espsilon: 0.01
+training session 300 done in 200 steps, espsilon: 0.01
+training session 301 done in 200 steps, espsilon: 0.01
+training session 302 done in 200 steps, espsilon: 0.01
+training session 303 done in 200 steps, espsilon: 0.01
+training session 304 done in 200 steps, espsilon: 0.01
+training session 305 done in 200 steps, espsilon: 0.01
+training session 306 done in 200 steps, espsilon: 0.01
+training session 307 done in 200 steps, espsilon: 0.01
+training session 308 done in 200 steps, espsilon: 0.01
+training session 309 done in 200 steps, espsilon: 0.01
+training session 310 done in 200 steps, espsilon: 0.01
+training session 311 done in 200 steps, espsilon: 0.01
+training session 312 done in 200 steps, espsilon: 0.01
+training session 313 done in 200 steps, espsilon: 0.01
+training session 314 done in 200 steps, espsilon: 0.01
+training session 315 done in 200 steps, espsilon: 0.01
+training session 316 done in 200 steps, espsilon: 0.01
+training session 317 done in 200 steps, espsilon: 0.01
+training session 318 done in 200 steps, espsilon: 0.01
+training session 319 done in 200 steps, espsilon: 0.01
+training session 320 done in 200 steps, espsilon: 0.01
+training session 321 done in 200 steps, espsilon: 0.01
+training session 322 done in 200 steps, espsilon: 0.01
+training session 323 done in 200 steps, espsilon: 0.01
+training session 324 done in 200 steps, espsilon: 0.01
+training session 325 done in 200 steps, espsilon: 0.01
+training session 326 done in 200 steps, espsilon: 0.01
+training session 327 done in 200 steps, espsilon: 0.01
+training session 328 done in 200 steps, espsilon: 0.01
+training session 329 done in 200 steps, espsilon: 0.01
+training session 330 done in 200 steps, espsilon: 0.01
+training session 331 done in 200 steps, espsilon: 0.01
+training session 332 done in 200 steps, espsilon: 0.01
+training session 333 done in 200 steps, espsilon: 0.01
+training session 334 done in 200 steps, espsilon: 0.01
+training session 335 done in 200 steps, espsilon: 0.01
+training session 336 done in 200 steps, espsilon: 0.01
+training session 337 done in 200 steps, espsilon: 0.01
+training session 338 done in 200 steps, espsilon: 0.01
+training session 339 done in 200 steps, espsilon: 0.01
+training session 340 done in 200 steps, espsilon: 0.01
+training session 341 done in 200 steps, espsilon: 0.01
+training session 342 done in 200 steps, espsilon: 0.01
+training session 343 done in 200 steps, espsilon: 0.01
+training session 344 done in 200 steps, espsilon: 0.01
+training session 345 done in 200 steps, espsilon: 0.01
+training session 346 done in 200 steps, espsilon: 0.01
+training session 347 done in 200 steps, espsilon: 0.01
+training session 348 done in 200 steps, espsilon: 0.01
+training session 349 done in 200 steps, espsilon: 0.01
+training session 350 done in 200 steps, espsilon: 0.01
+training session 351 done in 200 steps, espsilon: 0.01
+training session 352 done in 200 steps, espsilon: 0.01
+training session 353 done in 200 steps, espsilon: 0.01
+training session 354 done in 200 steps, espsilon: 0.01
+training session 355 done in 200 steps, espsilon: 0.01
+training session 356 done in 200 steps, espsilon: 0.01
+training session 357 done in 200 steps, espsilon: 0.01
+training session 358 done in 200 steps, espsilon: 0.01
+training session 359 done in 200 steps, espsilon: 0.01
+training session 360 done in 200 steps, espsilon: 0.01
+training session 361 done in 200 steps, espsilon: 0.01
+training session 362 done in 200 steps, espsilon: 0.01
+training session 363 done in 200 steps, espsilon: 0.01
+training session 364 done in 200 steps, espsilon: 0.01
+training session 365 done in 200 steps, espsilon: 0.01
+training session 366 done in 200 steps, espsilon: 0.01
+training session 367 done in 200 steps, espsilon: 0.01
+training session 368 done in 200 steps, espsilon: 0.01
+training session 369 done in 200 steps, espsilon: 0.01
+training session 370 done in 200 steps, espsilon: 0.01
+training session 371 done in 200 steps, espsilon: 0.01
+training session 372 done in 200 steps, espsilon: 0.01
+training session 373 done in 200 steps, espsilon: 0.01
+training session 374 done in 200 steps, espsilon: 0.01
+training session 375 done in 200 steps, espsilon: 0.01
+training session 376 done in 200 steps, espsilon: 0.01
+training session 377 done in 200 steps, espsilon: 0.01
+training session 378 done in 200 steps, espsilon: 0.01
+training session 379 done in 200 steps, espsilon: 0.01
+training session 380 done in 200 steps, espsilon: 0.01
+training session 381 done in 200 steps, espsilon: 0.01
+training session 382 done in 200 steps, espsilon: 0.01
+training session 383 done in 200 steps, espsilon: 0.01
+training session 384 done in 200 steps, espsilon: 0.01
+training session 385 done in 200 steps, espsilon: 0.01
+training session 386 done in 200 steps, espsilon: 0.01
+training session 387 done in 200 steps, espsilon: 0.01
+training session 388 done in 200 steps, espsilon: 0.01
+training session 389 done in 200 steps, espsilon: 0.01
+training session 390 done in 200 steps, espsilon: 0.01
+training session 391 done in 200 steps, espsilon: 0.01
+training session 392 done in 200 steps, espsilon: 0.01
+training session 393 done in 200 steps, espsilon: 0.01
+training session 394 done in 200 steps, espsilon: 0.01
+training session 395 done in 200 steps, espsilon: 0.01
+training session 396 done in 200 steps, espsilon: 0.01
+training session 397 done in 200 steps, espsilon: 0.01
+training session 398 done in 200 steps, espsilon: 0.01
+training session 399 done in 200 steps, espsilon: 0.01
+training session 400 done in 200 steps, espsilon: 0.01
+training session 401 done in 200 steps, espsilon: 0.01
+training session 402 done in 200 steps, espsilon: 0.01
+training session 403 done in 200 steps, espsilon: 0.01
+training session 404 done in 200 steps, espsilon: 0.01
+training session 405 done in 200 steps, espsilon: 0.01
+training session 406 done in 200 steps, espsilon: 0.01
+training session 407 done in 200 steps, espsilon: 0.01
+training session 408 done in 200 steps, espsilon: 0.01
+training session 409 done in 200 steps, espsilon: 0.01
+training session 410 done in 200 steps, espsilon: 0.01
+[0.50907513 0.01983807] 10 True {}
+training session 411 done in 199 steps, espsilon: 0.01
+[0.50907513 0.01983807] 10 True {}
+training session 412 done in 178 steps, espsilon: 0.01
+training session 413 done in 200 steps, espsilon: 0.01
+[0.52409664 0.02998237] 10 True {}
+training session 414 done in 136 steps, espsilon: 0.01
+[0.51060634 0.03064451] 10 True {}
+training session 415 done in 188 steps, espsilon: 0.01
+training session 416 done in 200 steps, espsilon: 0.01
+training session 417 done in 200 steps, espsilon: 0.01
+training session 418 done in 200 steps, espsilon: 0.01
+training session 419 done in 200 steps, espsilon: 0.01
+training session 420 done in 200 steps, espsilon: 0.01
+training session 421 done in 200 steps, espsilon: 0.01
+training session 422 done in 200 steps, espsilon: 0.01
+training session 423 done in 200 steps, espsilon: 0.01
+training session 424 done in 200 steps, espsilon: 0.01
+training session 425 done in 200 steps, espsilon: 0.01
+training session 426 done in 200 steps, espsilon: 0.01
+training session 427 done in 200 steps, espsilon: 0.01
+training session 428 done in 200 steps, espsilon: 0.01
+training session 429 done in 200 steps, espsilon: 0.01
+training session 430 done in 200 steps, espsilon: 0.01
+training session 431 done in 200 steps, espsilon: 0.01
+training session 432 done in 200 steps, espsilon: 0.01
+training session 433 done in 200 steps, espsilon: 0.01
+training session 434 done in 200 steps, espsilon: 0.01
+training session 435 done in 200 steps, espsilon: 0.01
+training session 436 done in 200 steps, espsilon: 0.01
+training session 437 done in 200 steps, espsilon: 0.01
+training session 438 done in 200 steps, espsilon: 0.01
+training session 439 done in 200 steps, espsilon: 0.01
+training session 440 done in 200 steps, espsilon: 0.01
+training session 441 done in 200 steps, espsilon: 0.01
+training session 442 done in 200 steps, espsilon: 0.01
+training session 443 done in 200 steps, espsilon: 0.01
+training session 444 done in 200 steps, espsilon: 0.01
+training session 445 done in 200 steps, espsilon: 0.01
+training session 446 done in 200 steps, espsilon: 0.01
+training session 447 done in 200 steps, espsilon: 0.01
+training session 448 done in 200 steps, espsilon: 0.01
+training session 449 done in 200 steps, espsilon: 0.01
+training session 450 done in 200 steps, espsilon: 0.01
+training session 451 done in 200 steps, espsilon: 0.01
+training session 452 done in 200 steps, espsilon: 0.01
+training session 453 done in 200 steps, espsilon: 0.01
+training session 454 done in 200 steps, espsilon: 0.01
+training session 455 done in 200 steps, espsilon: 0.01
+training session 456 done in 200 steps, espsilon: 0.01
+training session 457 done in 200 steps, espsilon: 0.01
+training session 458 done in 200 steps, espsilon: 0.01
+training session 459 done in 200 steps, espsilon: 0.01
+training session 460 done in 200 steps, espsilon: 0.01
+training session 461 done in 200 steps, espsilon: 0.01
+training session 462 done in 200 steps, espsilon: 0.01
+training session 463 done in 200 steps, espsilon: 0.01
+training session 464 done in 200 steps, espsilon: 0.01
+training session 465 done in 200 steps, espsilon: 0.01
+training session 466 done in 200 steps, espsilon: 0.01
+training session 467 done in 200 steps, espsilon: 0.01
+training session 468 done in 200 steps, espsilon: 0.01
+training session 469 done in 200 steps, espsilon: 0.01
+training session 470 done in 200 steps, espsilon: 0.01
+training session 471 done in 200 steps, espsilon: 0.01
+training session 472 done in 200 steps, espsilon: 0.01
+training session 473 done in 200 steps, espsilon: 0.01
+training session 474 done in 200 steps, espsilon: 0.01
+training session 475 done in 200 steps, espsilon: 0.01
+training session 476 done in 200 steps, espsilon: 0.01
+training session 477 done in 200 steps, espsilon: 0.01
+[0.5094771  0.01193497] 10 True {}
+training session 478 done in 182 steps, espsilon: 0.01
+training session 479 done in 200 steps, espsilon: 0.01
+[0.50527375 0.01244765] 10 True {}
+training session 480 done in 186 steps, espsilon: 0.01
+[0.50624731 0.00714026] 10 True {}
+training session 481 done in 189 steps, espsilon: 0.01
+[0.5067224  0.00923328] 10 True {}
+training session 482 done in 187 steps, espsilon: 0.01
+training session 483 done in 200 steps, espsilon: 0.01
+training session 484 done in 200 steps, espsilon: 0.01
+training session 485 done in 200 steps, espsilon: 0.01
+training session 486 done in 200 steps, espsilon: 0.01
+training session 487 done in 200 steps, espsilon: 0.01
+[0.50624731 0.00714026] 10 True {}
+training session 488 done in 184 steps, espsilon: 0.01
+[0.50852863 0.01301698] 10 True {}
+training session 489 done in 178 steps, espsilon: 0.01
+training session 490 done in 200 steps, espsilon: 0.01
+[0.50435352 0.00528365] 10 True {}
+training session 491 done in 187 steps, espsilon: 0.01
+[0.5112162  0.01476105] 10 True {}
+training session 492 done in 174 steps, espsilon: 0.01
+training session 493 done in 200 steps, espsilon: 0.01
+training session 494 done in 200 steps, espsilon: 0.01
+training session 495 done in 200 steps, espsilon: 0.01
+[0.50265411 0.00874563] 10 True {}
+training session 496 done in 178 steps, espsilon: 0.01
+training session 497 done in 200 steps, espsilon: 0.01
+training session 498 done in 200 steps, espsilon: 0.01
+training session 499 done in 200 steps, espsilon: 0.01
+training session 500 done in 200 steps, espsilon: 0.01
+training session 501 done in 200 steps, espsilon: 0.01
+training session 502 done in 200 steps, espsilon: 0.01
+training session 503 done in 200 steps, espsilon: 0.01
+training session 504 done in 200 steps, espsilon: 0.01
+training session 505 done in 200 steps, espsilon: 0.01
+training session 506 done in 200 steps, espsilon: 0.01
+[0.51548475 0.02190401] 10 True {}
+training session 507 done in 177 steps, espsilon: 0.01
+training session 508 done in 200 steps, espsilon: 0.01
+training session 509 done in 200 steps, espsilon: 0.01
+training session 510 done in 200 steps, espsilon: 0.01
+[0.50377905 0.01348394] 10 True {}
+training session 511 done in 190 steps, espsilon: 0.01
+[0.50975963 0.01522938] 10 True {}
+training session 512 done in 180 steps, espsilon: 0.01
+training session 513 done in 200 steps, espsilon: 0.01
+training session 514 done in 200 steps, espsilon: 0.01
+[0.50036534 0.01136941] 10 True {}
+training session 515 done in 176 steps, espsilon: 0.01
+training session 516 done in 200 steps, espsilon: 0.01
+training session 517 done in 200 steps, espsilon: 0.01
+training session 518 done in 200 steps, espsilon: 0.01
+training session 519 done in 200 steps, espsilon: 0.01
+training session 520 done in 200 steps, espsilon: 0.01
+training session 521 done in 200 steps, espsilon: 0.01
+training session 522 done in 200 steps, espsilon: 0.01
+training session 523 done in 200 steps, espsilon: 0.01
+training session 524 done in 200 steps, espsilon: 0.01
+training session 525 done in 200 steps, espsilon: 0.01
+training session 526 done in 200 steps, espsilon: 0.01
+training session 527 done in 200 steps, espsilon: 0.01
+training session 528 done in 200 steps, espsilon: 0.01
+training session 529 done in 200 steps, espsilon: 0.01
+training session 530 done in 200 steps, espsilon: 0.01
+training session 531 done in 200 steps, espsilon: 0.01
+training session 532 done in 200 steps, espsilon: 0.01
+training session 533 done in 200 steps, espsilon: 0.01
+training session 534 done in 200 steps, espsilon: 0.01
+training session 535 done in 200 steps, espsilon: 0.01
+training session 536 done in 200 steps, espsilon: 0.01
+training session 537 done in 200 steps, espsilon: 0.01
+training session 538 done in 200 steps, espsilon: 0.01
+training session 539 done in 200 steps, espsilon: 0.01
+training session 540 done in 200 steps, espsilon: 0.01
+training session 541 done in 200 steps, espsilon: 0.01
+training session 542 done in 200 steps, espsilon: 0.01
+training session 543 done in 200 steps, espsilon: 0.01
+training session 544 done in 200 steps, espsilon: 0.01
+training session 545 done in 200 steps, espsilon: 0.01
+training session 546 done in 200 steps, espsilon: 0.01
+training session 547 done in 200 steps, espsilon: 0.01
+training session 548 done in 200 steps, espsilon: 0.01
+training session 549 done in 200 steps, espsilon: 0.01
+training session 550 done in 200 steps, espsilon: 0.01
+training session 551 done in 200 steps, espsilon: 0.01
+training session 552 done in 200 steps, espsilon: 0.01
+training session 553 done in 200 steps, espsilon: 0.01
+training session 554 done in 200 steps, espsilon: 0.01
+training session 555 done in 200 steps, espsilon: 0.01
+training session 556 done in 200 steps, espsilon: 0.01
+training session 557 done in 200 steps, espsilon: 0.01
+training session 558 done in 200 steps, espsilon: 0.01
+[0.50054345 0.00118   ] 10 True {}
+training session 559 done in 191 steps, espsilon: 0.01
+[0.5005235 0.0028019] 10 True {}
+training session 560 done in 186 steps, espsilon: 0.01
+[0.51066379 0.01458735] 10 True {}
+training session 561 done in 169 steps, espsilon: 0.01
+[0.5158991  0.01610651] 10 True {}
+training session 562 done in 169 steps, espsilon: 0.01
+[0.50791957 0.00995848] 10 True {}
+training session 563 done in 172 steps, espsilon: 0.01
+[0.51066379 0.01458735] 10 True {}
+training session 564 done in 168 steps, espsilon: 0.01
+[0.50262623 0.00836473] 10 True {}
+training session 565 done in 172 steps, espsilon: 0.01
+[0.50791957 0.00995848] 10 True {}
+training session 566 done in 174 steps, espsilon: 0.01
+[0.51066379 0.01458735] 10 True {}
+training session 567 done in 167 steps, espsilon: 0.01
+[0.50837731 0.02064197] 10 True {}
+training session 568 done in 172 steps, espsilon: 0.01
+[0.50354568 0.0179511 ] 10 True {}
+training session 569 done in 166 steps, espsilon: 0.01
+[0.51593096 0.02087316] 10 True {}
+training session 570 done in 168 steps, espsilon: 0.01
+[0.50723863 0.01831127] 10 True {}
+training session 571 done in 169 steps, espsilon: 0.01
+[0.50723863 0.01831127] 10 True {}
+training session 572 done in 177 steps, espsilon: 0.01
+training session 573 done in 200 steps, espsilon: 0.01
+training session 574 done in 200 steps, espsilon: 0.01
+[0.5026588  0.01506241] 10 True {}
+training session 575 done in 181 steps, espsilon: 0.01
+[0.5026588  0.01506241] 10 True {}
+training session 576 done in 183 steps, espsilon: 0.01
+[0.50323269 0.0096239 ] 10 True {}
+training session 577 done in 183 steps, espsilon: 0.01
+training session 578 done in 200 steps, espsilon: 0.01
+[0.50054345 0.00118   ] 10 True {}
+training session 579 done in 187 steps, espsilon: 0.01
+[0.50054345 0.00118   ] 10 True {}
+training session 580 done in 189 steps, espsilon: 0.01
+[0.50054345 0.00118   ] 10 True {}
+training session 581 done in 189 steps, espsilon: 0.01
+[0.50626259 0.01064635] 10 True {}
+training session 582 done in 172 steps, espsilon: 0.01
+[0.50626259 0.01064635] 10 True {}
+training session 583 done in 171 steps, espsilon: 0.01
+[0.50693973 0.00857446] 10 True {}
+training session 584 done in 177 steps, espsilon: 0.01
+[0.50185383 0.00331424] 10 True {}
+training session 585 done in 183 steps, espsilon: 0.01
+training session 586 done in 200 steps, espsilon: 0.01
+training session 587 done in 200 steps, espsilon: 0.01
+[0.5026588  0.01506241] 10 True {}
+training session 588 done in 172 steps, espsilon: 0.01
+training session 589 done in 200 steps, espsilon: 0.01
+[0.5007135  0.01194527] 10 True {}
+training session 590 done in 180 steps, espsilon: 0.01
+[0.50700527 0.01305519] 10 True {}
+training session 591 done in 167 steps, espsilon: 0.01
+training session 592 done in 200 steps, espsilon: 0.01
+[0.50585298 0.01344153] 10 True {}
+training session 593 done in 130 steps, espsilon: 0.01
+[0.50618036 0.01044401] 10 True {}
+training session 594 done in 130 steps, espsilon: 0.01
+[0.50073144 0.01108245] 10 True {}
+training session 595 done in 171 steps, espsilon: 0.01
+[0.50755073 0.00989463] 10 True {}
+training session 596 done in 171 steps, espsilon: 0.01
+[0.50457956 0.01039033] 10 True {}
+training session 597 done in 170 steps, espsilon: 0.01
+training session 598 done in 200 steps, espsilon: 0.01
+[0.50295184 0.01108076] 10 True {}
+training session 599 done in 129 steps, espsilon: 0.01
+[0.51603347 0.01620237] 10 True {}
+training session 600 done in 169 steps, espsilon: 0.01
+[0.5109612  0.01829705] 10 True {}
+training session 601 done in 162 steps, espsilon: 0.01
+[0.50007132 0.01968476] 10 True {}
+training session 602 done in 161 steps, espsilon: 0.01
+[0.50688835 0.01514986] 10 True {}
+training session 603 done in 162 steps, espsilon: 0.01
+[0.50073144 0.01108245] 10 True {}
+training session 604 done in 165 steps, espsilon: 0.01
+[0.50295184 0.01108076] 10 True {}
+training session 605 done in 165 steps, espsilon: 0.01
+[0.50732416 0.01698431] 10 True {}
+training session 606 done in 162 steps, espsilon: 0.01
+[0.51419445 0.01742998] 10 True {}
+training session 607 done in 160 steps, espsilon: 0.01
+[0.50723863 0.01831127] 10 True {}
+training session 608 done in 168 steps, espsilon: 0.01
+[0.50723863 0.01831127] 10 True {}
+training session 609 done in 162 steps, espsilon: 0.01
+[0.50316436 0.0172665 ] 10 True {}
+training session 610 done in 158 steps, espsilon: 0.01
+[0.50817852 0.01648275] 10 True {}
+training session 611 done in 162 steps, espsilon: 0.01
+[0.51593096 0.02087316] 10 True {}
+training session 612 done in 159 steps, espsilon: 0.01
+[0.50048538 0.02112382] 10 True {}
+training session 613 done in 162 steps, espsilon: 0.01
+[0.50048538 0.02112382] 10 True {}
+training session 614 done in 157 steps, espsilon: 0.01
+[0.50048538 0.02112382] 10 True {}
+training session 615 done in 159 steps, espsilon: 0.01
+[0.50389458 0.02101062] 10 True {}
+training session 616 done in 162 steps, espsilon: 0.01
+[0.50389458 0.02101062] 10 True {}
+training session 617 done in 158 steps, espsilon: 0.01
+[0.5109612  0.01829705] 10 True {}
+training session 618 done in 160 steps, espsilon: 0.01
+[0.50048538 0.02112382] 10 True {}
+training session 619 done in 159 steps, espsilon: 0.01
+[0.50389458 0.02101062] 10 True {}
+training session 620 done in 157 steps, espsilon: 0.01
+[0.51294303 0.01884894] 10 True {}
+training session 621 done in 159 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 622 done in 167 steps, espsilon: 0.01
+[0.50159902 0.01628527] 10 True {}
+training session 623 done in 160 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 624 done in 159 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 625 done in 164 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 626 done in 161 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 627 done in 160 steps, espsilon: 0.01
+[0.51886107 0.01970934] 10 True {}
+training session 628 done in 159 steps, espsilon: 0.01
+training session 629 done in 200 steps, espsilon: 0.01
+[0.51464645 0.02021494] 10 True {}
+training session 630 done in 158 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 631 done in 159 steps, espsilon: 0.01
+[0.50389458 0.02101062] 10 True {}
+training session 632 done in 155 steps, espsilon: 0.01
+[0.50392578 0.01755835] 10 True {}
+training session 633 done in 158 steps, espsilon: 0.01
+[0.50200868 0.01603176] 10 True {}
+training session 634 done in 159 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 635 done in 157 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 636 done in 158 steps, espsilon: 0.01
+[0.51237485 0.01810657] 10 True {}
+training session 637 done in 159 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 638 done in 158 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 639 done in 165 steps, espsilon: 0.01
+[0.50775002 0.01473586] 10 True {}
+training session 640 done in 159 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 641 done in 162 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 642 done in 158 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 643 done in 157 steps, espsilon: 0.01
+[0.50879935 0.01775577] 10 True {}
+training session 644 done in 157 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 645 done in 159 steps, espsilon: 0.01
+[0.5114132  0.01773446] 10 True {}
+training session 646 done in 160 steps, espsilon: 0.01
+[0.5148777  0.02052594] 10 True {}
+training session 647 done in 156 steps, espsilon: 0.01
+[0.50435425 0.02030882] 10 True {}
+training session 648 done in 156 steps, espsilon: 0.01
+[0.50732376 0.01729163] 10 True {}
+training session 649 done in 162 steps, espsilon: 0.01
+[0.50435425 0.02030882] 10 True {}
+training session 650 done in 154 steps, espsilon: 0.01
+[0.50435425 0.02030882] 10 True {}
+training session 651 done in 155 steps, espsilon: 0.01
+[0.50571598 0.01836754] 10 True {}
+training session 652 done in 155 steps, espsilon: 0.01
+[0.50435425 0.02030882] 10 True {}
+training session 653 done in 159 steps, espsilon: 0.01
+[0.50435425 0.02030882] 10 True {}
+training session 654 done in 154 steps, espsilon: 0.01
+[0.50135699 0.01971648] 10 True {}
+training session 655 done in 155 steps, espsilon: 0.01
+[0.50135699 0.01971648] 10 True {}
+training session 656 done in 154 steps, espsilon: 0.01
+[0.5140356  0.01940777] 10 True {}
+training session 657 done in 157 steps, espsilon: 0.01
+[0.50788547 0.02087357] 10 True {}
+training session 658 done in 159 steps, espsilon: 0.01
+[0.51053554 0.02239651] 10 True {}
+training session 659 done in 158 steps, espsilon: 0.01
+[0.50312841 0.02124028] 10 True {}
+training session 660 done in 158 steps, espsilon: 0.01
+[0.51053554 0.02239651] 10 True {}
+training session 661 done in 154 steps, espsilon: 0.01
+[0.50669513 0.02137552] 10 True {}
+training session 662 done in 158 steps, espsilon: 0.01
+[0.51266259 0.02426163] 10 True {}
+training session 663 done in 157 steps, espsilon: 0.01
+[0.51266259 0.02426163] 10 True {}
+training session 664 done in 154 steps, espsilon: 0.01
+[0.50793528 0.02408681] 10 True {}
+training session 665 done in 157 steps, espsilon: 0.01
+[0.50395031 0.02162933] 10 True {}
+training session 666 done in 153 steps, espsilon: 0.01
+[0.50961326 0.02356754] 10 True {}
+training session 667 done in 160 steps, espsilon: 0.01
+[0.50509249 0.02373092] 10 True {}
+training session 668 done in 162 steps, espsilon: 0.01
+[0.50101225 0.0223603 ] 10 True {}
+training session 669 done in 156 steps, espsilon: 0.01
+[0.50961326 0.02356754] 10 True {}
+training session 670 done in 152 steps, espsilon: 0.01
+[0.51433212 0.026151  ] 10 True {}
+training session 671 done in 158 steps, espsilon: 0.01
+[0.50961326 0.02356754] 10 True {}
+training session 672 done in 151 steps, espsilon: 0.01
+[0.50961326 0.02356754] 10 True {}
+training session 673 done in 155 steps, espsilon: 0.01
+[0.50961326 0.02356754] 10 True {}
+training session 674 done in 156 steps, espsilon: 0.01
+[0.50139394 0.02310751] 10 True {}
+training session 675 done in 155 steps, espsilon: 0.01
+[0.50553936 0.02252293] 10 True {}
+training session 676 done in 152 steps, espsilon: 0.01
+[0.50961326 0.02356754] 10 True {}
+training session 677 done in 153 steps, espsilon: 0.01
+[0.50084994 0.02404994] 10 True {}
+training session 678 done in 153 steps, espsilon: 0.01
+[0.50825163 0.02520474] 10 True {}
+training session 679 done in 151 steps, espsilon: 0.01
+[0.50825163 0.02520474] 10 True {}
+training session 680 done in 151 steps, espsilon: 0.01
+[0.50825163 0.02520474] 10 True {}
+training session 681 done in 155 steps, espsilon: 0.01
+[0.50636648 0.02747583] 10 True {}
+training session 682 done in 150 steps, espsilon: 0.01
+[0.50199785 0.0240939 ] 10 True {}
+training session 683 done in 152 steps, espsilon: 0.01
+[0.50173633 0.02569037] 10 True {}
+training session 684 done in 148 steps, espsilon: 0.01
+[0.50374375 0.0266978 ] 10 True {}
+training session 685 done in 148 steps, espsilon: 0.01
+[0.52092038 0.02748621] 10 True {}
+training session 686 done in 149 steps, espsilon: 0.01
+[0.50636648 0.02747583] 10 True {}
+training session 687 done in 149 steps, espsilon: 0.01
+[0.50636648 0.02747583] 10 True {}
+training session 688 done in 149 steps, espsilon: 0.01
+[0.50636648 0.02747583] 10 True {}
+training session 689 done in 152 steps, espsilon: 0.01
+[0.50636648 0.02747583] 10 True {}
+training session 690 done in 152 steps, espsilon: 0.01
+[0.50636648 0.02747583] 10 True {}
+training session 691 done in 148 steps, espsilon: 0.01
+[0.52861501 0.02940803] 10 True {}
+training session 692 done in 148 steps, espsilon: 0.01
+[0.52861501 0.02940803] 10 True {}
+training session 693 done in 148 steps, espsilon: 0.01
+[0.52737028 0.02870764] 10 True {}
+training session 694 done in 148 steps, espsilon: 0.01
+[0.5135641  0.02888842] 10 True {}
+training session 695 done in 149 steps, espsilon: 0.01
+[0.52245346 0.02849702] 10 True {}
+training session 696 done in 150 steps, espsilon: 0.01
+[0.51553812 0.02581577] 10 True {}
+training session 697 done in 151 steps, espsilon: 0.01
+[0.52861501 0.02940803] 10 True {}
+training session 698 done in 151 steps, espsilon: 0.01
+[0.52861501 0.02940803] 10 True {}
+training session 699 done in 149 steps, espsilon: 0.01
+[0.52861501 0.02940803] 10 True {}
+training session 700 done in 150 steps, espsilon: 0.01
+[0.50006579 0.02958234] 10 True {}
+training session 701 done in 152 steps, espsilon: 0.01
+[0.52737028 0.02870764] 10 True {}
+training session 702 done in 149 steps, espsilon: 0.01
+[0.51234369 0.01909419] 10 True {}
+training session 703 done in 149 steps, espsilon: 0.01
+[0.51919387 0.03070722] 10 True {}
+training session 704 done in 148 steps, espsilon: 0.01
+[0.51919387 0.03070722] 10 True {}
+training session 705 done in 149 steps, espsilon: 0.01
+[0.50524635 0.02567274] 10 True {}
+training session 706 done in 150 steps, espsilon: 0.01
+[0.51919387 0.03070722] 10 True {}
+training session 707 done in 150 steps, espsilon: 0.01
+[0.50723754 0.03193081] 10 True {}
+training session 708 done in 147 steps, espsilon: 0.01
+[0.50723754 0.03193081] 10 True {}
+training session 709 done in 147 steps, espsilon: 0.01
+[0.50723754 0.03193081] 10 True {}
+training session 710 done in 147 steps, espsilon: 0.01
+[0.50723754 0.03193081] 10 True {}
+training session 711 done in 148 steps, espsilon: 0.01
+[0.52886779 0.03150764] 10 True {}
+training session 712 done in 153 steps, espsilon: 0.01
+[0.52588709 0.03287703] 10 True {}
+training session 713 done in 148 steps, espsilon: 0.01
+[0.50723754 0.03193081] 10 True {}
+training session 714 done in 148 steps, espsilon: 0.01
+[0.50723754 0.03193081] 10 True {}
+training session 715 done in 148 steps, espsilon: 0.01
+[0.50833096 0.01998312] 10 True {}
+training session 716 done in 149 steps, espsilon: 0.01
+[0.52588709 0.03287703] 10 True {}
+training session 717 done in 149 steps, espsilon: 0.01
+[0.52176626 0.03199528] 10 True {}
+training session 718 done in 153 steps, espsilon: 0.01
+[0.50848397 0.02952673] 10 True {}
+training session 719 done in 149 steps, espsilon: 0.01
+[0.50094873 0.01175523] 10 True {}
+training session 720 done in 149 steps, espsilon: 0.01
+[0.51067312 0.02274457] 10 True {}
+training session 721 done in 149 steps, espsilon: 0.01
+[0.51961977 0.03039795] 10 True {}
+training session 722 done in 151 steps, espsilon: 0.01
+[0.50854438 0.02207143] 10 True {}
+training session 723 done in 146 steps, espsilon: 0.01
+[0.50916745 0.03465971] 10 True {}
+training session 724 done in 147 steps, espsilon: 0.01
+[0.51931306 0.01941145] 10 True {}
+training session 725 done in 149 steps, espsilon: 0.01
+[0.50916745 0.03465971] 10 True {}
+training session 726 done in 148 steps, espsilon: 0.01
+[0.52563199 0.02889823] 10 True {}
+training session 727 done in 150 steps, espsilon: 0.01
+training session 728 done in 200 steps, espsilon: 0.01
+[0.51502636 0.02316592] 10 True {}
+training session 729 done in 147 steps, espsilon: 0.01
+[0.50916745 0.03465971] 10 True {}
+training session 730 done in 147 steps, espsilon: 0.01
+training session 731 done in 200 steps, espsilon: 0.01
+[0.50916745 0.03465971] 10 True {}
+training session 732 done in 147 steps, espsilon: 0.01
+[0.52691543 0.03547923] 10 True {}
+training session 733 done in 147 steps, espsilon: 0.01
+[0.50732562 0.02570377] 10 True {}
+training session 734 done in 145 steps, espsilon: 0.01
+[0.52691543 0.03547923] 10 True {}
+training session 735 done in 145 steps, espsilon: 0.01
+[0.52691543 0.03547923] 10 True {}
+training session 736 done in 146 steps, espsilon: 0.01
+[0.52691543 0.03547923] 10 True {}
+training session 737 done in 148 steps, espsilon: 0.01
+[0.51835635 0.02116768] 10 True {}
+training session 738 done in 145 steps, espsilon: 0.01
+[0.52691543 0.03547923] 10 True {}
+training session 739 done in 148 steps, espsilon: 0.01
+[0.52348799 0.03607571] 10 True {}
+training session 740 done in 147 steps, espsilon: 0.01
+[0.50412327 0.03164856] 10 True {}
+training session 741 done in 146 steps, espsilon: 0.01
+[0.52838328 0.03369558] 10 True {}
+training session 742 done in 149 steps, espsilon: 0.01
+[0.52691543 0.03547923] 10 True {}
+training session 743 done in 148 steps, espsilon: 0.01
+[0.51735701 0.02503896] 10 True {}
+training session 744 done in 144 steps, espsilon: 0.01
+[0.51844454 0.03327108] 10 True {}
+training session 745 done in 146 steps, espsilon: 0.01
+[0.50580809 0.0299109 ] 10 True {}
+training session 746 done in 144 steps, espsilon: 0.01
+[0.50436124 0.0378694 ] 10 True {}
+training session 747 done in 145 steps, espsilon: 0.01
+[0.50832921 0.03639999] 10 True {}
+training session 748 done in 147 steps, espsilon: 0.01
+[0.50608916 0.03131747] 10 True {}
+training session 749 done in 143 steps, espsilon: 0.01
+[0.50832921 0.03639999] 10 True {}
+training session 750 done in 146 steps, espsilon: 0.01
+[0.5091138 0.0325203] 10 True {}
+training session 751 done in 144 steps, espsilon: 0.01
+[0.5049148  0.03713335] 10 True {}
+training session 752 done in 148 steps, espsilon: 0.01
+[0.5049148  0.03713335] 10 True {}
+training session 753 done in 145 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 754 done in 147 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 755 done in 148 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 756 done in 146 steps, espsilon: 0.01
+[0.5197434  0.03673939] 10 True {}
+training session 757 done in 149 steps, espsilon: 0.01
+[0.5197434  0.03673939] 10 True {}
+training session 758 done in 146 steps, espsilon: 0.01
+[0.50745785 0.03537136] 10 True {}
+training session 759 done in 147 steps, espsilon: 0.01
+[0.52879188 0.02925491] 10 True {}
+training session 760 done in 193 steps, espsilon: 0.01
+[0.51500238 0.03530178] 10 True {}
+training session 761 done in 148 steps, espsilon: 0.01
+[0.5197434  0.03673939] 10 True {}
+training session 762 done in 148 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 763 done in 146 steps, espsilon: 0.01
+[0.52068734 0.03518867] 10 True {}
+training session 764 done in 147 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 765 done in 145 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 766 done in 145 steps, espsilon: 0.01
+[0.51671399 0.03076395] 10 True {}
+training session 767 done in 145 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 768 done in 146 steps, espsilon: 0.01
+[0.52621287 0.03392885] 10 True {}
+training session 769 done in 143 steps, espsilon: 0.01
+[0.52949576 0.03369115] 10 True {}
+training session 770 done in 145 steps, espsilon: 0.01
+[0.5049148  0.03713335] 10 True {}
+training session 771 done in 145 steps, espsilon: 0.01
+[0.50010829 0.03777646] 10 True {}
+training session 772 done in 145 steps, espsilon: 0.01
+[0.53203581 0.03292462] 10 True {}
+training session 773 done in 146 steps, espsilon: 0.01
+[0.52061393 0.03759717] 10 True {}
+training session 774 done in 146 steps, espsilon: 0.01
+[0.51229218 0.0382821 ] 10 True {}
+training session 775 done in 146 steps, espsilon: 0.01
+[0.5070745 0.0336705] 10 True {}
+training session 776 done in 142 steps, espsilon: 0.01
+[0.5049148  0.03713335] 10 True {}
+training session 777 done in 145 steps, espsilon: 0.01
+[0.50629977 0.03540065] 10 True {}
+training session 778 done in 146 steps, espsilon: 0.01
+[0.51506343 0.03377075] 10 True {}
+training session 779 done in 142 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 780 done in 144 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 781 done in 146 steps, espsilon: 0.01
+[0.51961474 0.03393002] 10 True {}
+training session 782 done in 139 steps, espsilon: 0.01
+[0.52899271 0.03405992] 10 True {}
+training session 783 done in 143 steps, espsilon: 0.01
+[0.50684771 0.03592951] 10 True {}
+training session 784 done in 144 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 785 done in 143 steps, espsilon: 0.01
+[0.50650931 0.03539172] 10 True {}
+training session 786 done in 145 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 787 done in 144 steps, espsilon: 0.01
+[0.5263796  0.03547418] 10 True {}
+training session 788 done in 141 steps, espsilon: 0.01
+[0.50807598 0.0309458 ] 10 True {}
+training session 789 done in 144 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 790 done in 145 steps, espsilon: 0.01
+[0.51921132 0.03122298] 10 True {}
+training session 791 done in 143 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 792 done in 147 steps, espsilon: 0.01
+[0.51668837 0.03673088] 10 True {}
+training session 793 done in 145 steps, espsilon: 0.01
+[0.50203326 0.03220266] 10 True {}
+training session 794 done in 143 steps, espsilon: 0.01
+[0.52756166 0.03602855] 10 True {}
+training session 795 done in 149 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 796 done in 143 steps, espsilon: 0.01
+[0.53024367 0.03730397] 10 True {}
+training session 797 done in 146 steps, espsilon: 0.01
+[0.51362173 0.03305442] 10 True {}
+training session 798 done in 144 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 799 done in 144 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 800 done in 146 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 801 done in 146 steps, espsilon: 0.01
+[0.52181434 0.03570268] 10 True {}
+training session 802 done in 146 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 803 done in 145 steps, espsilon: 0.01
+[0.52520654 0.03706787] 10 True {}
+training session 804 done in 146 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 805 done in 145 steps, espsilon: 0.01
+[0.53142298 0.03735256] 10 True {}
+training session 806 done in 147 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 807 done in 144 steps, espsilon: 0.01
+training session 808 done in 200 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 809 done in 143 steps, espsilon: 0.01
+[0.53024367 0.03730397] 10 True {}
+training session 810 done in 146 steps, espsilon: 0.01
+[0.50535522 0.03721043] 10 True {}
+training session 811 done in 145 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 812 done in 143 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 813 done in 146 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 814 done in 143 steps, espsilon: 0.01
+[0.50030882 0.03867988] 10 True {}
+training session 815 done in 145 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 816 done in 146 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 817 done in 144 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 818 done in 147 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 819 done in 147 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 820 done in 145 steps, espsilon: 0.01
+[0.53695317 0.03764385] 10 True {}
+training session 821 done in 146 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 822 done in 144 steps, espsilon: 0.01
+[0.51658117 0.03922613] 10 True {}
+training session 823 done in 145 steps, espsilon: 0.01
+training session 824 done in 200 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 825 done in 145 steps, espsilon: 0.01
+[0.52600969 0.03611861] 10 True {}
+training session 826 done in 147 steps, espsilon: 0.01
+[0.5062491  0.03866858] 10 True {}
+training session 827 done in 145 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 828 done in 147 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 829 done in 145 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 830 done in 146 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 831 done in 145 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 832 done in 147 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 833 done in 146 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 834 done in 147 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 835 done in 147 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 836 done in 192 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 837 done in 146 steps, espsilon: 0.01
+[0.52061091 0.03839566] 10 True {}
+training session 838 done in 147 steps, espsilon: 0.01
+[0.52709214 0.03882073] 10 True {}
+training session 839 done in 148 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 840 done in 148 steps, espsilon: 0.01
+[0.51953622 0.03817595] 10 True {}
+training session 841 done in 198 steps, espsilon: 0.01
+[0.51230076 0.01671019] 10 True {}
+training session 842 done in 124 steps, espsilon: 0.01
+[0.51465655 0.02055954] 10 True {}
+training session 843 done in 123 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 844 done in 197 steps, espsilon: 0.01
+[0.51380121 0.03949677] 10 True {}
+training session 845 done in 150 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 846 done in 149 steps, espsilon: 0.01
+[0.50819312 0.01006332] 10 True {}
+training session 847 done in 131 steps, espsilon: 0.01
+training session 848 done in 200 steps, espsilon: 0.01
+training session 849 done in 200 steps, espsilon: 0.01
+[0.51380121 0.03949677] 10 True {}
+training session 850 done in 197 steps, espsilon: 0.01
+training session 851 done in 200 steps, espsilon: 0.01
+training session 852 done in 200 steps, espsilon: 0.01
+[0.51101866 0.02528055] 10 True {}
+training session 853 done in 124 steps, espsilon: 0.01
+training session 854 done in 200 steps, espsilon: 0.01
+training session 855 done in 200 steps, espsilon: 0.01
+[0.51099818 0.01234098] 10 True {}
+training session 856 done in 135 steps, espsilon: 0.01
+[0.51098073 0.02601859] 10 True {}
+training session 857 done in 124 steps, espsilon: 0.01
+[0.51090164 0.02118942] 10 True {}
+training session 858 done in 125 steps, espsilon: 0.01
+training session 859 done in 200 steps, espsilon: 0.01
+[0.51380121 0.03949677] 10 True {}
+training session 860 done in 164 steps, espsilon: 0.01
+[0.53385372 0.03837876] 10 True {}
+training session 861 done in 163 steps, espsilon: 0.01
+[0.51092235 0.01703479] 10 True {}
+training session 862 done in 127 steps, espsilon: 0.01
+training session 863 done in 200 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 864 done in 163 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 865 done in 161 steps, espsilon: 0.01
+training session 866 done in 200 steps, espsilon: 0.01
+training session 867 done in 200 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 868 done in 161 steps, espsilon: 0.01
+training session 869 done in 200 steps, espsilon: 0.01
+training session 870 done in 200 steps, espsilon: 0.01
+training session 871 done in 200 steps, espsilon: 0.01
+training session 872 done in 200 steps, espsilon: 0.01
+training session 873 done in 200 steps, espsilon: 0.01
+training session 874 done in 200 steps, espsilon: 0.01
+training session 875 done in 200 steps, espsilon: 0.01
+training session 876 done in 200 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 877 done in 164 steps, espsilon: 0.01
+training session 878 done in 200 steps, espsilon: 0.01
+training session 879 done in 200 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 880 done in 159 steps, espsilon: 0.01
+[0.5015978 0.0381431] 10 True {}
+training session 881 done in 158 steps, espsilon: 0.01
+[0.50102261 0.00284775] 10 True {}
+training session 882 done in 149 steps, espsilon: 0.01
+[0.5279881  0.03498868] 10 True {}
+training session 883 done in 173 steps, espsilon: 0.01
+[0.51257819 0.03744691] 10 True {}
+training session 884 done in 175 steps, espsilon: 0.01
+[0.51663059 0.03278564] 10 True {}
+training session 885 done in 172 steps, espsilon: 0.01
+[0.53689737 0.03891333] 10 True {}
+training session 886 done in 157 steps, espsilon: 0.01
+[0.5243419  0.03818342] 10 True {}
+training session 887 done in 171 steps, espsilon: 0.01
+[0.53287865 0.03976191] 10 True {}
+training session 888 done in 161 steps, espsilon: 0.01
+[0.53287865 0.03976191] 10 True {}
+training session 889 done in 162 steps, espsilon: 0.01
+[0.53287865 0.03976191] 10 True {}
+training session 890 done in 158 steps, espsilon: 0.01
+training session 891 done in 200 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 892 done in 158 steps, espsilon: 0.01
+[0.50967319 0.03820417] 10 True {}
+training session 893 done in 176 steps, espsilon: 0.01
+[0.50233536 0.03189623] 10 True {}
+training session 894 done in 180 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 895 done in 158 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 896 done in 156 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 897 done in 158 steps, espsilon: 0.01
+[0.53103846 0.03853452] 10 True {}
+training session 898 done in 167 steps, espsilon: 0.01
+[0.53343652 0.03854562] 10 True {}
+training session 899 done in 163 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 900 done in 158 steps, espsilon: 0.01
+[0.51816605 0.03618307] 10 True {}
+training session 901 done in 165 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 902 done in 154 steps, espsilon: 0.01
+[0.50116655 0.04086357] 10 True {}
+training session 903 done in 165 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 904 done in 161 steps, espsilon: 0.01
+[0.50282333 0.0412274 ] 10 True {}
+training session 905 done in 155 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 906 done in 153 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 907 done in 150 steps, espsilon: 0.01
+[0.52377486 0.03979763] 10 True {}
+training session 908 done in 162 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 909 done in 164 steps, espsilon: 0.01
+[0.54067003 0.04118848] 10 True {}
+training session 910 done in 154 steps, espsilon: 0.01
+[0.51749299 0.04135707] 10 True {}
+training session 911 done in 154 steps, espsilon: 0.01
+[0.51865302 0.04164145] 10 True {}
+training session 912 done in 162 steps, espsilon: 0.01
+[0.51865302 0.04164145] 10 True {}
+training session 913 done in 150 steps, espsilon: 0.01
+[0.50230547 0.04108691] 10 True {}
+training session 914 done in 157 steps, espsilon: 0.01
+[0.53828629 0.0400759 ] 10 True {}
+training session 915 done in 158 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 916 done in 151 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 917 done in 150 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 918 done in 147 steps, espsilon: 0.01
+[0.50647952 0.04029231] 10 True {}
+training session 919 done in 157 steps, espsilon: 0.01
+[0.51865302 0.04164145] 10 True {}
+training session 920 done in 158 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 921 done in 144 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 922 done in 145 steps, espsilon: 0.01
+[0.53000543 0.03871798] 10 True {}
+training session 923 done in 146 steps, espsilon: 0.01
+[0.5089224  0.04039844] 10 True {}
+training session 924 done in 145 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 925 done in 152 steps, espsilon: 0.01
+[0.51372077 0.03990453] 10 True {}
+training session 926 done in 163 steps, espsilon: 0.01
+[0.52477486 0.04079763] 10 True {}
+training session 927 done in 159 steps, espsilon: 0.01
+[0.54067003 0.04118848] 10 True {}
+training session 928 done in 147 steps, espsilon: 0.01
+[0.52588407 0.03970458] 10 True {}
+training session 929 done in 148 steps, espsilon: 0.01
+[0.52966281 0.03988052] 10 True {}
+training session 930 done in 153 steps, espsilon: 0.01
+[0.52966281 0.03988052] 10 True {}
+training session 931 done in 153 steps, espsilon: 0.01
+[0.52966281 0.03988052] 10 True {}
+training session 932 done in 146 steps, espsilon: 0.01
+[0.51917707 0.03948645] 10 True {}
+training session 933 done in 143 steps, espsilon: 0.01
+training session 934 done in 200 steps, espsilon: 0.01
+[0.53793486 0.03857309] 10 True {}
+training session 935 done in 162 steps, espsilon: 0.01
+training session 936 done in 200 steps, espsilon: 0.01
+[0.52966281 0.03988052] 10 True {}
+training session 937 done in 144 steps, espsilon: 0.01
+[0.52811985 0.03418428] 10 True {}
+training session 938 done in 149 steps, espsilon: 0.01
+training session 939 done in 200 steps, espsilon: 0.01
+[0.54067003 0.04118848] 10 True {}
+training session 940 done in 148 steps, espsilon: 0.01
+[0.54067003 0.04118848] 10 True {}
+training session 941 done in 149 steps, espsilon: 0.01
+[0.54067003 0.04118848] 10 True {}
+training session 942 done in 143 steps, espsilon: 0.01
+training session 943 done in 200 steps, espsilon: 0.01
+training session 944 done in 200 steps, espsilon: 0.01
+training session 945 done in 200 steps, espsilon: 0.01
+training session 946 done in 200 steps, espsilon: 0.01
+training session 947 done in 200 steps, espsilon: 0.01
+[0.50807805 0.01358374] 10 True {}
+training session 948 done in 148 steps, espsilon: 0.01
+training session 949 done in 200 steps, espsilon: 0.01
+training session 950 done in 200 steps, espsilon: 0.01
+training session 951 done in 200 steps, espsilon: 0.01
+[0.50337992 0.00724943] 10 True {}
+training session 952 done in 153 steps, espsilon: 0.01
+[0.50780112 0.01853042] 10 True {}
+training session 953 done in 144 steps, espsilon: 0.01
+training session 954 done in 200 steps, espsilon: 0.01
+training session 955 done in 200 steps, espsilon: 0.01
+training session 956 done in 200 steps, espsilon: 0.01
+training session 957 done in 200 steps, espsilon: 0.01
+training session 958 done in 200 steps, espsilon: 0.01
+training session 959 done in 200 steps, espsilon: 0.01
+training session 960 done in 200 steps, espsilon: 0.01
+training session 961 done in 200 steps, espsilon: 0.01
+training session 962 done in 200 steps, espsilon: 0.01
+training session 963 done in 200 steps, espsilon: 0.01
+training session 964 done in 200 steps, espsilon: 0.01
+training session 965 done in 200 steps, espsilon: 0.01
+training session 966 done in 200 steps, espsilon: 0.01
+training session 967 done in 200 steps, espsilon: 0.01
+training session 968 done in 200 steps, espsilon: 0.01
+training session 969 done in 200 steps, espsilon: 0.01
+[0.51622632 0.0347609 ] 10 True {}
+training session 970 done in 160 steps, espsilon: 0.01
+training session 971 done in 200 steps, espsilon: 0.01
+training session 972 done in 200 steps, espsilon: 0.01
+[0.52131369 0.03929303] 10 True {}
+training session 973 done in 157 steps, espsilon: 0.01
+training session 974 done in 200 steps, espsilon: 0.01
+training session 975 done in 200 steps, espsilon: 0.01
+training session 976 done in 200 steps, espsilon: 0.01
+[0.50772771 0.02962335] 10 True {}
+training session 977 done in 163 steps, espsilon: 0.01
+training session 978 done in 200 steps, espsilon: 0.01
+training session 979 done in 200 steps, espsilon: 0.01
+[0.53068989 0.0308262 ] 10 True {}
+training session 980 done in 164 steps, espsilon: 0.01
+training session 981 done in 200 steps, espsilon: 0.01
+training session 982 done in 200 steps, espsilon: 0.01
+training session 983 done in 200 steps, espsilon: 0.01
+training session 984 done in 200 steps, espsilon: 0.01
+training session 985 done in 200 steps, espsilon: 0.01
+training session 986 done in 200 steps, espsilon: 0.01
+training session 987 done in 200 steps, espsilon: 0.01
+training session 988 done in 200 steps, espsilon: 0.01
+training session 989 done in 200 steps, espsilon: 0.01
+training session 990 done in 200 steps, espsilon: 0.01
+training session 991 done in 200 steps, espsilon: 0.01
+training session 992 done in 200 steps, espsilon: 0.01
+training session 993 done in 200 steps, espsilon: 0.01
+training session 994 done in 200 steps, espsilon: 0.01
+training session 995 done in 200 steps, espsilon: 0.01
+training session 996 done in 200 steps, espsilon: 0.01
+training session 997 done in 200 steps, espsilon: 0.01
+[0.50800305 0.04255861] 10 True {}
+training session 998 done in 154 steps, espsilon: 0.01
+training session 999 done in 200 steps, espsilon: 0.01
