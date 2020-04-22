@@ -49,9 +49,11 @@ class Memory:
             return random.sample(self.events, (size))
         else: 
             return []
+    def __len__(self):
+        return len(self.events)
 
 class Epsilon:
-    def __init__(self, start=0.0, min=0.0, decay=0.05): #was 1.0, 0.01, 0.05
+    def __init__(self, start=1.0, min=0.01, decay=0.00005): #was 1.0, 0.01, 0.05
         self.value = start
         self.min = min
         self.decay_by = decay
@@ -63,6 +65,8 @@ class Predictor:
     # with N the number of training examplesa and the number of 
     # possible clauses
     def __init__(self, in_dim: int, out_dim: int):
+        print(in_dim)
+        print(out_dim)
         self.model = keras.Sequential([
             Dense(24, activation='relu', input_shape=(in_dim,)),
             Dense(48, activation='relu'),
@@ -127,7 +131,7 @@ def samples_to_states(samples):
     return before_states, after_states
 
 def replay_and_train(memory: Memory, model: Predictor, model_train: Predictor, sample_size: int):
-    gamma = 0.99 #look into gamma
+    gamma = 0.95 #look into gamma
 
     samples = memory.sample(sample_size)
     before_states, after_states = samples_to_states(samples)
@@ -140,7 +144,8 @@ def replay_and_train(memory: Memory, model: Predictor, model_train: Predictor, s
         else:
             predict_effects[i][action] = score + gamma*max(predict_future_effects[i])
 
-    model_train.model.fit(before_states, predict_effects, verbose=0)
+    model.model.fit(before_states, predict_effects, verbose=0) #TODO FIXME remove
+    #model_train.model.fit(before_states, predict_effects, verbose=0) #TODO FIXME re-enable
 
 def best_action(state: np.ndarray, model: Predictor, env, epsilon: Epsilon) -> int:
     epsilon.decay()
@@ -157,6 +162,7 @@ def best_action(state: np.ndarray, model: Predictor, env, epsilon: Epsilon) -> i
 def main():
     MAX_STEPS = 200
     SAMPLE_SIZE = 32
+    MINIMAL_MEMORY_SIZE = 400
     
     env = gym.make("MountainCar-v0")
     env._max_episode_steps = MAX_STEPS+1
@@ -165,15 +171,16 @@ def main():
     env_action_dim = (env.action_space.__dict__["n"])
     model = Predictor(env_state_dim, env_action_dim)
     model_train = model.clone()
-    memory = Memory()
+    memory = Memory(maxlen=40_000)
     epsilon = Epsilon()
+    print(epsilon.value)
 
     for training_session in range(1000):
         before = env.reset()
 
         for step in range(MAX_STEPS):
-            if training_session % 100 == 0:
-                env.render()
+            #if training_session % 100 == 0:
+            #    env.render()
             action = best_action(before, model, env, epsilon)
             after, score, success, debug = env.step(action) # returns [state: numpy.ndarray, reward: float, done: bool, debug: dict]
 
@@ -181,17 +188,16 @@ def main():
                 score = 10
 
             memory.remember((before, action, after, score, success))
-            if step > SAMPLE_SIZE: #ensure some exploration has been done
+            if len(memory) > MINIMAL_MEMORY_SIZE: #ensure some exploration has been done
                 replay_and_train(memory, model, model_train, SAMPLE_SIZE)
             before = after
     
             if success:
                 print(after, score, success, debug)
                 break
-            
 
-        print("training session {} done in {} steps".format(training_session, step+1))
-        model.copy_weights_from(model_train)
+        print("training session {} done in {} steps, espsilon: {}".format(training_session, step+1, epsilon.value))
+        #model.copy_weights_from(model_train) #TODO FIXME re-enable
 
 if __name__ == "__main__":
     main()
