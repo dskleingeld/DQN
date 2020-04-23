@@ -45,7 +45,9 @@ def cropped_scaled_grayscale(state: np.ndarray) -> np.ndarray:
     cropped_state = crop(state)
     gray_state = to_grayscale(cropped_state)
     resized = gray_state[::2, ::2]
-    #print(f"size: {resized.shape}")
+
     #plt.imshow(resized, cmap=plt.cm.gray)
     #plt.show()
+    #plt.savefig("figs/network_input.png") # used to check preprocessing and to gen. image for report
+    #plt.close()
     return resized

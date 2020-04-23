@@ -144,8 +144,8 @@ def replay_and_train(memory: Memory, model: Predictor, model_train: Predictor, s
         else:
             predict_effects[i][action] = score + gamma*max(predict_future_effects[i])
 
-    model.model.fit(before_states, predict_effects, verbose=0) #TODO FIXME remove
-    #model_train.model.fit(before_states, predict_effects, verbose=0) #TODO FIXME re-enable
+
+    model_train.model.fit(before_states, predict_effects, verbose=0)
 
 def best_action(state: np.ndarray, model: Predictor, env, epsilon: Epsilon) -> int:
     epsilon.decay()
@@ -197,7 +197,7 @@ def main():
                 break
 
         print("training session {} done in {} steps, espsilon: {}".format(training_session, step+1, epsilon.value))
-        #model.copy_weights_from(model_train) #TODO FIXME re-enable
+        model.copy_weights_from(model_train)
 
 if __name__ == "__main__":
     main()
