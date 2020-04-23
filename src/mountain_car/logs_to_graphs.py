@@ -3,6 +3,7 @@ import numpy as np
 from  matplotlib import pyplot as plt
 import seaborn
 
+p = re.compile(r'training session \d+ done in (\d+) steps, espsilon: ([\d.]+)')
 
 def file_to_stats(name):
     with open("logs/"+name) as f:
@@ -16,8 +17,6 @@ def file_to_stats(name):
             steps.append(int(match.group(1)))
             epsilons.append(float(match.group(2)))
     return steps, epsilons
-
-p = re.compile(r'training session \d+ done in (\d+) steps, espsilon: ([\d.]+)')
 
 def moving_average(x, w):
     return np.convolve(x, np.ones(w), 'valid') / w
