@@ -1,11 +1,13 @@
-\documentclass{tufte-handout}
+%\documentclass{tufte-handout}
+\documentclass{mimosis}
 
+\usepackage{hyperref}
 \usepackage{graphicx} % allow embedded images
   \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
   \graphicspath{{../figs/}} % set of paths to search for images
-\usepackage{float}
-\usepackage{subcaption}
-  \captionsetup{compatibility=false}
+%\usepackage{float}
+%\usepackage{subcaption}
+%  \captionsetup{compatibility=false}
 \usepackage[toc,page]{appendix} %appendices with sections
 \usepackage{amsmath}  % extended mathematics
 \usepackage{booktabs} % book-quality tables
@@ -21,29 +23,12 @@
 \usepackage{multicol} % multi column lists
   \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
 
-% Standardize command font styles and environments
-\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
-\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
-\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
-\newcommand{\docenv}[1]{\textsf{#1}}% environment name
-\newcommand{\docpkg}[1]{\texttt{#1}}% package name
-\newcommand{\doccls}[1]{\texttt{#1}}% document class name
-\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
-\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
-
-\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
-\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
-
 \title{Acing simple games, an exploration of neural networks for reinforcement learning\thanks{A report for the Leiden University Reinforcement Learning course}}
 \author{David Kleingeld}
 
 \begin{document}
 
 \maketitle% this prints the handout title, author, and date
-
-\begin{abstract}
-\noindent 
-\end{abstract}
 
 \tableofcontents
 
@@ -72,13 +57,14 @@
 \newpage
 \renewcommand{\bibname}{References}
 \bibliographystyle{unsrt}
-\nobibliography{References} %replaces bibliography
+\bibliography{References} 
+%\nobibliography{References} %replaces bibliography
 
 % appendix?
 
 \end{document}
 
-\pagestyle{scrheadings} % Show chapter titles as headings
+%\pagestyle{scrheadings} % Show chapter titles as headings
 \cleardoublepage % Avoids problems with pdfbookmark
 
 
