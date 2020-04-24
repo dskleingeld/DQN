@@ -1,4 +1,3 @@
-from ringbuf import RingBuf
 import numpy as np
 import keras
 from keras.optimizers import RMSprop
