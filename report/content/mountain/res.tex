@@ -71,7 +71,7 @@ After running the training 4 times the agent was able to reach the goal in only 
 
 \begin{figure}
     \includegraphics{mcar_40000_no_iwu}
-    \caption{Two seperate runs of training the mountain car agent with a replay buffer which remembers the last $40000$ timesteps. On the y-axis the number of steps needed to finish, 200 means the algorithm failed to reach the goal in time. On the x-axis the iteration number. The orange line is epsilon, the blue line follows the scores of the training iteration and the green line is the moving average of the score. The agent solves the problem after less then 200 training iterations}
+    \caption{The training of the agent with a replay buffer (size: $40000$ timesteps) but without infrequent weights updates. On the y-axis the number of steps needed to finish, 200 means the algorithm failed to reach the goal in time. On the x-axis the iteration number. The orange line is epsilon, the blue line follows the scores of the training iteration and the green line is the moving average of the score. The agent solves the problem after less then 200 training iterations}
     \label{fig:no_iwu}
 \end{figure}
 
