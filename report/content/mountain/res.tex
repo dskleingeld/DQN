@@ -47,7 +47,7 @@ Now I look at the learning stability of the agent if I decrease the buffer size,
     \label{fig:mcar_10k_a}
 \end{figure}
 
-In figure \autoref{fig:mcar_10k_a} wes see the agent grow stabily become better between episode 600 and 800 before collapsing. In \autoref{fig:mcar_10k_b} I see the agent behaving more stable as the training iterations go on. In half of the runs the agent failed to complete the task once within the available time ($200$ timesteps).
+In the upper part of figure \autoref{fig:mcar_10k_a} wes see the agent grow stabily become better between episode 600 and 800 before collapsing. In the lower part of that figure the agent is behaving more stable as the training iterations go on. In half of the runs the agent failed to complete the task once within the available time ($200$ timesteps).
 
 Doubling the replay buffer size from the default to $40 000$ timesteps gives rise to the results in \autoref{fig:mcar_40k_a} and \autoref{fig:mcar_40k_b}. By increasing the replay buffer size I expect more stable behavior. 
 

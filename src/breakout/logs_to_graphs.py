@@ -1,7 +1,7 @@
 import re
 import numpy as np
 from  matplotlib import pyplot as plt
-import seaborn
+#import seaborn
 
 p = re.compile(r'score: ([\d.]+), epsilon: ([\d.]+), session took: (\d+)\s+steps,')
 

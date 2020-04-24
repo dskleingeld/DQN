@@ -1,7 +1,7 @@
 import re
 import numpy as np
 from  matplotlib import pyplot as plt
-import seaborn
+#import seaborn
 
 p = re.compile(r'training session \d+ done in (\d+) steps, espsilon: ([\d.]+)')
 
